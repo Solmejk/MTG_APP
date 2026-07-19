@@ -85,11 +85,14 @@ def _search_prints(query: str) -> list[dict]:
     return []
 
 
-def cheapest_prices_eur(card_names: list[str]) -> dict[str, float | None]:
-    """Cheapest EUR price for each name, one Scryfall request per BATCH_SIZE
-    names (an "or"-combined query) instead of one request per card — this
-    is what keeps a deck with 70+ missing cards from firing 70+ requests
-    and tripping Scryfall's rate limit.
+def cheapest_prices_eur(card_names: list[str]) -> dict[str, dict | None]:
+    """Cheapest EUR price (and which set it's from) for each name, one
+    Scryfall request per BATCH_SIZE names (an "or"-combined query) instead
+    of one request per card — this is what keeps a deck with 70+ missing
+    cards from firing 70+ requests and tripping Scryfall's rate limit.
+
+    Returns {name: {"price": float, "set": str}} or {name: None} if no
+    priced printing was found.
 
     The query filters to eur>0 server-side rather than sorting all prints
     ascending and filtering nulls client-side: with dir=asc, unpriced
@@ -97,7 +100,7 @@ def cheapest_prices_eur(card_names: list[str]) -> dict[str, float | None]:
     first, so a card with many of those would otherwise never reach a
     priced entry and wrongly look like it has no price at all."""
     unique_names = list(dict.fromkeys(card_names))  # de-dup, keep order
-    prices: dict[str, float | None] = {name: None for name in unique_names}
+    results: dict[str, dict | None] = {name: None for name in unique_names}
 
     for i in range(0, len(unique_names), BATCH_SIZE):
         batch = unique_names[i:i + BATCH_SIZE]
@@ -108,7 +111,7 @@ def cheapest_prices_eur(card_names: list[str]) -> dict[str, float | None]:
             price = p.get("prices", {}).get("eur")
             # Results are sorted ascending, so the first hit per name is its
             # cheapest — later duplicates of the same name are only pricier.
-            if name in prices and prices[name] is None and price is not None:
-                prices[name] = float(price)
+            if name in results and results[name] is None and price is not None:
+                results[name] = {"price": float(price), "set": p.get("set", "")}
 
-    return prices
+    return results

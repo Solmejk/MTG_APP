@@ -1,2 +1,2 @@
 # MTG_APP
-This is going to be an app helping with tasks related to the card came Magic the Gathering
+This app is an companion app for Magic the Gathering, focused around paper deck management and building. 

@@ -88,7 +88,8 @@ QLabel#screenTitle {
     background-color: transparent;
 }
 
-QScrollArea#decksScroll {
+QScrollArea#decksScroll,
+QScrollArea#cardModalScroll {
     background-color: transparent;
     border: none;
 }
@@ -190,6 +191,16 @@ QLineEdit#searchInput:focus {
     border: 1px solid #e8a838;
 }
 
+QPlainTextEdit#exportText {
+    background-color: #2a2a2a;
+    color: #e8e8e8;
+    border: 1px solid #2d2d2d;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-family: Consolas, monospace;
+    font-size: 12px;
+}
+
 QLabel#resultCount {
     color: #888888;
     font-size: 12px;
@@ -202,13 +213,13 @@ QToolButton {
     color: #e8e8e8;
     border: 1px solid #2d2d2d;
     border-radius: 4px;
-    padding: 4px 14px;
+    padding: 8px 16px;
     font-weight: bold;
     /* pt, not px — the stylesheet cascade always wins over a Python-set
        QFont once any QSS touches a widget (setFont() alone doesn't stick),
        and a px-only font leaves QFont.pointSize() at -1, which broke
        tooltip rendering ("QFont::setPointSize: Point size <= 0"). */
-    font-size: 22pt;
+    font-size: 10pt;
 }
 QToolButton:hover {
     border: 1px solid #e8a838;
@@ -220,6 +231,7 @@ QToolButton:checked {
 }
 QToolButton::menu-indicator {
     image: none;
+    width: 0px;
 }
 
 QMenu {

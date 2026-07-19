@@ -1,0 +1,803 @@
+{
+  "name": "Agatha",
+  "format": "commander",
+  "commanders": [
+    {
+      "name": "Agatha of the Vile Cauldron",
+      "set": "woe",
+      "cn": "199",
+      "quantity": 1,
+      "price": 1.25,
+      "image_url": "https://cards.scryfall.io/normal/front/d/6/d6c48f07-63b7-4a60-8da6-ce77405abf1e.jpg",
+      "type_line": "Legendary Creature \u2014 Human Warlock"
+    }
+  ],
+  "cards": [
+    {
+      "name": "Mountain",
+      "set": "inv",
+      "cn": "343",
+      "quantity": 9,
+      "price": 0.64,
+      "image_url": "https://cards.scryfall.io/normal/front/b/a/ba6694bb-f3b7-48ff-9d93-cbed84fac210.jpg",
+      "type_line": "Basic Land \u2014 Mountain"
+    },
+    {
+      "name": "Forest",
+      "set": "ddu",
+      "cn": "32",
+      "quantity": 7,
+      "price": 0.02,
+      "image_url": "https://cards.scryfall.io/normal/front/5/2/5257440c-ab4e-4b9e-a694-f7ff54feaa1b.jpg",
+      "type_line": "Basic Land \u2014 Forest"
+    },
+    {
+      "name": "Castle Garenbrig",
+      "set": "peld",
+      "cn": "240p",
+      "quantity": 1,
+      "price": 4.64,
+      "image_url": "https://cards.scryfall.io/normal/front/f/b/fbef0b7f-f680-4915-a74c-300502745ea6.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Beast Within",
+      "set": "bbd",
+      "cn": "190",
+      "quantity": 1,
+      "price": 0.84,
+      "image_url": "https://cards.scryfall.io/normal/front/a/b/ab3e096a-d6e8-4148-bbea-f26fc67e2fe2.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Birds of Paradise",
+      "set": "sum",
+      "cn": "187",
+      "quantity": 1,
+      "price": 3.0,
+      "image_url": "https://cards.scryfall.io/normal/front/f/9/f98a2785-cb74-4ef9-abd0-d7a8125d73ca.jpg",
+      "type_line": "Creature \u2014 Bird"
+    },
+    {
+      "name": "Gateway Plaza",
+      "set": "grn",
+      "cn": "247",
+      "quantity": 1,
+      "price": 0.04,
+      "image_url": "https://cards.scryfall.io/normal/front/7/d/7d3d5162-126d-4430-9884-8e79afa974c2.jpg",
+      "type_line": "Land \u2014 Gate"
+    },
+    {
+      "name": "Llanowar Elves",
+      "set": "fdn",
+      "cn": "227",
+      "quantity": 1,
+      "price": 0.23,
+      "image_url": "https://cards.scryfall.io/normal/front/6/a/6a0b230b-d391-4998-a3f7-7b158a0ec2cd.jpg",
+      "type_line": "Creature \u2014 Elf Druid"
+    },
+    {
+      "name": "Nature's Lore",
+      "set": "clb",
+      "cn": "244",
+      "quantity": 1,
+      "price": 2.74,
+      "image_url": "https://cards.scryfall.io/normal/front/5/4/543d1e79-cac6-455c-9fda-f13c849579d6.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Nature's Claim",
+      "set": "cns",
+      "cn": "171",
+      "quantity": 1,
+      "price": 0.64,
+      "image_url": "https://cards.scryfall.io/normal/front/5/1/51027197-55da-45a3-901b-5ccb204095e9.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Rhonas's Monument",
+      "set": "akh",
+      "cn": "236",
+      "quantity": 1,
+      "price": 0.76,
+      "image_url": "https://cards.scryfall.io/normal/front/5/3/53d2260a-e001-4d03-a108-759591e4d233.jpg",
+      "type_line": "Legendary Artifact"
+    },
+    {
+      "name": "Shamanic Revelation",
+      "set": "frf",
+      "cn": "138",
+      "quantity": 1,
+      "price": 0.72,
+      "image_url": "https://cards.scryfall.io/normal/front/5/c/5c7f2c73-26d8-42a6-acde-2c5a2f4e21a1.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Valakut Invoker",
+      "set": "cmr",
+      "cn": "206",
+      "quantity": 1,
+      "price": 0.12,
+      "image_url": "https://cards.scryfall.io/normal/front/b/8/b8000d86-60e7-4edd-b685-14ade08b76f2.jpg",
+      "type_line": "Creature \u2014 Human Shaman"
+    },
+    {
+      "name": "Wild Growth",
+      "set": "5ed",
+      "cn": "342",
+      "quantity": 1,
+      "price": 0.44,
+      "image_url": "https://cards.scryfall.io/normal/front/2/a/2a9e6630-d57c-47fd-af0f-b2e2c2025599.jpg",
+      "type_line": "Enchantment \u2014 Aura"
+    },
+    {
+      "name": "Brightwood Tracker",
+      "set": "m20",
+      "cn": "166",
+      "quantity": 1,
+      "price": 0.08,
+      "image_url": "https://cards.scryfall.io/normal/front/e/1/e1fb9767-29bf-4a69-b37c-0925d41f6b46.jpg",
+      "type_line": "Creature \u2014 Elf Scout"
+    },
+    {
+      "name": "Elvish Reclaimer",
+      "set": "m20",
+      "cn": "169",
+      "quantity": 1,
+      "price": 7.11,
+      "image_url": "https://cards.scryfall.io/normal/front/3/9/39c431d7-d94b-46c4-bb89-f3db56214ab4.jpg",
+      "type_line": "Creature \u2014 Elf Warrior"
+    },
+    {
+      "name": "Field of the Dead",
+      "set": "m20",
+      "cn": "247",
+      "quantity": 1,
+      "price": 29.2,
+      "image_url": "https://cards.scryfall.io/normal/front/4/7/470ca3f4-29aa-4c4c-8ff2-8cdd70c69943.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Blasphemous Act",
+      "set": "pip",
+      "cn": "188",
+      "quantity": 1,
+      "price": 1.39,
+      "image_url": "https://cards.scryfall.io/normal/front/d/e/de9c16b7-63c2-4071-9117-184cb1a04f14.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Feldon of the Third Path",
+      "set": "c21",
+      "cn": "169",
+      "quantity": 1,
+      "price": 1.03,
+      "image_url": "https://cards.scryfall.io/normal/front/9/7/97879ddb-b00b-4f24-b901-af19c436b9f1.jpg",
+      "type_line": "Legendary Creature \u2014 Human Artificer"
+    },
+    {
+      "name": "Forgotten Ancient",
+      "set": "dmr",
+      "cn": "341",
+      "quantity": 1,
+      "price": 0.42,
+      "image_url": "https://cards.scryfall.io/normal/front/8/a/8afea4ea-02f2-47ca-b690-864a5663eecc.jpg",
+      "type_line": "Creature \u2014 Elemental"
+    },
+    {
+      "name": "Evolutionary Escalation",
+      "set": "plst",
+      "cn": "C16-22",
+      "quantity": 1,
+      "price": 0.56,
+      "image_url": "https://cards.scryfall.io/normal/front/8/7/87044135-f71c-46a8-b891-d71adc0c22ce.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Gruul Turf",
+      "set": "clb",
+      "cn": "895",
+      "quantity": 1,
+      "price": 0.2,
+      "image_url": "https://cards.scryfall.io/normal/front/1/0/104961dc-6684-474e-b126-4fcd95849f98.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Spawnsire of Ulamog",
+      "set": "roe",
+      "cn": "11",
+      "quantity": 1,
+      "price": 4.25,
+      "image_url": "https://cards.scryfall.io/normal/front/9/f/9ff46819-bfb3-4448-ab4f-f22ff9e2b2b4.jpg",
+      "type_line": "Creature \u2014 Eldrazi"
+    },
+    {
+      "name": "Gruul Guildgate",
+      "set": "fdn",
+      "cn": "690",
+      "quantity": 1,
+      "price": 0.17,
+      "image_url": "https://cards.scryfall.io/normal/front/3/a/3ab6c240-c97d-4a5c-bc39-860c2d9901c2.jpg",
+      "type_line": "Land \u2014 Gate"
+    },
+    {
+      "name": "Kessig Wolf Run",
+      "set": "m3c",
+      "cn": "352",
+      "quantity": 1,
+      "price": 0.26,
+      "image_url": "https://cards.scryfall.io/normal/front/5/3/53f72b5f-86a1-4d44-94e2-93d4856ce3a8.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Elvish Mystic",
+      "set": "cmm",
+      "cn": "648",
+      "quantity": 1,
+      "price": 0.93,
+      "image_url": "https://cards.scryfall.io/normal/front/0/7/077ba531-ab3b-4d00-af2c-2d4914c68cd8.jpg",
+      "type_line": "Creature \u2014 Elf Druid"
+    },
+    {
+      "name": "Viridian Lorebearers",
+      "set": "5dn",
+      "cn": "99",
+      "quantity": 1,
+      "price": 0.07,
+      "image_url": "https://cards.scryfall.io/normal/front/8/5/85673b93-39b7-44e1-b27d-b716bde42f0b.jpg",
+      "type_line": "Creature \u2014 Elf Shaman"
+    },
+    {
+      "name": "Magus of the Candelabra",
+      "set": "m3c",
+      "cn": "236",
+      "quantity": 1,
+      "price": 0.2,
+      "image_url": "https://cards.scryfall.io/normal/front/5/9/593b618e-6882-429b-80f1-ab02ac72cfbc.jpg",
+      "type_line": "Creature \u2014 Human Wizard"
+    },
+    {
+      "name": "Duskwatch Recruiter // Krallenhorde Howler",
+      "set": "inr",
+      "cn": "467",
+      "quantity": 1,
+      "price": 0.48,
+      "image_url": "https://cards.scryfall.io/normal/front/4/b/4bef0ee6-465a-4a42-b22b-7e6b91a0f9df.jpg",
+      "type_line": "Creature \u2014 Human Warrior Werewolf // Creature \u2014 Werewolf"
+    },
+    {
+      "name": "Guardian Project",
+      "set": "rvr",
+      "cn": "349",
+      "quantity": 1,
+      "price": 13.18,
+      "image_url": "https://cards.scryfall.io/normal/front/0/3/03e24cda-36b3-4676-a774-d5a55aa95500.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Incubation Druid",
+      "set": "moc",
+      "cn": "302",
+      "quantity": 1,
+      "price": 1.69,
+      "image_url": "https://cards.scryfall.io/normal/front/b/3/b3d8c95e-09b9-46d6-80e9-95adb2c2ea9d.jpg",
+      "type_line": "Creature \u2014 Elf Druid"
+    },
+    {
+      "name": "Beast Whisperer",
+      "set": "tsr",
+      "cn": "356",
+      "quantity": 1,
+      "price": 6.44,
+      "image_url": "https://cards.scryfall.io/normal/front/1/7/17fbebd9-9faf-4a7b-8e79-b67c074eba8c.jpg",
+      "type_line": "Creature \u2014 Elf Druid"
+    },
+    {
+      "name": "Retreat to Kazandu",
+      "set": "bfz",
+      "cn": "186",
+      "quantity": 1,
+      "price": 0.26,
+      "image_url": "https://cards.scryfall.io/normal/front/5/3/53884f2a-6749-4d85-be64-82919eb30e39.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Soul of New Phyrexia",
+      "set": "c16",
+      "cn": "274",
+      "quantity": 1,
+      "price": 0.57,
+      "image_url": "https://cards.scryfall.io/normal/front/7/5/755c95c9-eead-486a-9a0e-384cc3143f6c.jpg",
+      "type_line": "Artifact Creature \u2014 Phyrexian Avatar"
+    },
+    {
+      "name": "Hammer Mage",
+      "set": "plst",
+      "cn": "MMQ-193",
+      "quantity": 1,
+      "price": 0.21,
+      "image_url": "https://cards.scryfall.io/normal/front/6/a/6acd78c1-a04c-49fd-a2a0-77cb6e8a8d9b.jpg",
+      "type_line": "Creature \u2014 Human Spellshaper"
+    },
+    {
+      "name": "Frontier Guide",
+      "set": "ddp",
+      "cn": "12",
+      "quantity": 1,
+      "price": 0.23,
+      "image_url": "https://cards.scryfall.io/normal/front/2/f/2f70f45f-aad0-47d5-9ed1-d5b1d591f775.jpg",
+      "type_line": "Creature \u2014 Elf Scout"
+    },
+    {
+      "name": "Soulbright Flamekin",
+      "set": "dd2",
+      "cn": "37",
+      "quantity": 1,
+      "price": 0.15,
+      "image_url": "https://cards.scryfall.io/normal/front/7/c/7c540d07-299d-4be3-9b97-42c05eea6237.jpg",
+      "type_line": "Creature \u2014 Elemental Shaman"
+    },
+    {
+      "name": "Vandalblast",
+      "set": "afc",
+      "cn": "148",
+      "quantity": 1,
+      "price": 1.85,
+      "image_url": "https://cards.scryfall.io/normal/front/6/2/6239c8c9-113f-410b-8894-94d7287ac8d4.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Three Visits",
+      "set": "ptk",
+      "cn": "153",
+      "quantity": 1,
+      "price": 30.65,
+      "image_url": "https://cards.scryfall.io/normal/front/3/0/306d22ae-657e-4b52-8cd9-6fc3df9e8376.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Oread of Mountain's Blaze",
+      "set": "thb",
+      "cn": "146",
+      "quantity": 1,
+      "price": 0.11,
+      "image_url": "https://cards.scryfall.io/normal/front/0/f/0f9bb73a-5b4e-4c9b-b0a6-8e531dc27394.jpg",
+      "type_line": "Enchantment Creature \u2014 Nymph"
+    },
+    {
+      "name": "Gorilla Shaman",
+      "set": "mh2",
+      "cn": "280",
+      "quantity": 1,
+      "price": 0.22,
+      "image_url": "https://cards.scryfall.io/normal/front/c/8/c8f8ee19-3a88-40fa-85d8-386ffe06efd7.jpg",
+      "type_line": "Creature \u2014 Ape Shaman"
+    },
+    {
+      "name": "Heartstone",
+      "set": "sth",
+      "cn": "134",
+      "quantity": 1,
+      "price": 1.41,
+      "image_url": "https://cards.scryfall.io/normal/front/0/e/0ed17325-6d2f-404e-b13f-d2d419d522b7.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Diviner's Wand",
+      "set": "mor",
+      "cn": "142",
+      "quantity": 1,
+      "price": 0.26,
+      "image_url": "https://cards.scryfall.io/normal/front/2/7/277eed87-6b78-456d-91fb-774c72b3ae8c.jpg",
+      "type_line": "Kindred Artifact \u2014 Wizard Equipment"
+    },
+    {
+      "name": "Chain Reaction",
+      "set": "onc",
+      "cn": "97",
+      "quantity": 1,
+      "price": 0.24,
+      "image_url": "https://cards.scryfall.io/normal/front/8/6/86ac292c-070e-439f-9c25-f4037cf1edd5.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Shaman of Forgotten Ways",
+      "set": "dtk",
+      "cn": "204",
+      "quantity": 1,
+      "price": 3.78,
+      "image_url": "https://cards.scryfall.io/normal/front/a/3/a3e9c8f7-2232-4a2a-8a00-0a2908bc7543.jpg",
+      "type_line": "Creature \u2014 Human Shaman"
+    },
+    {
+      "name": "Cloaked Cadet",
+      "set": "vow",
+      "cn": "192",
+      "quantity": 1,
+      "price": 0.07,
+      "image_url": "https://cards.scryfall.io/normal/front/0/6/06d86c79-d2c7-4900-9474-4d4bc4c74d44.jpg",
+      "type_line": "Creature \u2014 Human Ranger"
+    },
+    {
+      "name": "Fight Rigging",
+      "set": "psnc",
+      "cn": "145p",
+      "quantity": 1,
+      "price": 0.46,
+      "image_url": "https://cards.scryfall.io/normal/front/c/e/ce73857b-0a32-4f77-9af4-3176758ca7b4.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Baldur's Gate",
+      "set": "clb",
+      "cn": "345",
+      "quantity": 1,
+      "price": 2.82,
+      "image_url": "https://cards.scryfall.io/normal/front/2/4/2436aa14-9200-4295-8041-b682cf3c4216.jpg",
+      "type_line": "Legendary Land \u2014 Gate"
+    },
+    {
+      "name": "Bhaal's Invoker",
+      "set": "clb",
+      "cn": "163",
+      "quantity": 1,
+      "price": 0.1,
+      "image_url": "https://cards.scryfall.io/normal/front/3/f/3fd3e535-8412-4f79-a2b1-dfda9db1c496.jpg",
+      "type_line": "Creature \u2014 Dragon Shaman"
+    },
+    {
+      "name": "Silvanus's Invoker",
+      "set": "clb",
+      "cn": "254",
+      "quantity": 1,
+      "price": 0.06,
+      "image_url": "https://cards.scryfall.io/normal/front/f/1/f1dd1bb8-013b-4028-becd-e0cb4b84f1ad.jpg",
+      "type_line": "Creature \u2014 Dragon Druid"
+    },
+    {
+      "name": "Gond Gate",
+      "set": "clb",
+      "cn": "353",
+      "quantity": 1,
+      "price": 0.96,
+      "image_url": "https://cards.scryfall.io/normal/front/7/4/746672d9-7c6b-415e-9f34-3cc3ac557008.jpg",
+      "type_line": "Land \u2014 Gate"
+    },
+    {
+      "name": "Drillworks Mole",
+      "set": "clb",
+      "cn": "311",
+      "quantity": 1,
+      "price": 0.11,
+      "image_url": "https://cards.scryfall.io/normal/front/9/8/9803002e-08f8-4533-b645-7e54d18bbc54.jpg",
+      "type_line": "Artifact Creature \u2014 Mole"
+    },
+    {
+      "name": "Manor Gate",
+      "set": "clb",
+      "cn": "356",
+      "quantity": 1,
+      "price": 1.33,
+      "image_url": "https://cards.scryfall.io/normal/front/7/9/793d4978-9e00-453d-8dc2-6d51ad6c26b7.jpg",
+      "type_line": "Land \u2014 Gate"
+    },
+    {
+      "name": "Cliffgate",
+      "set": "plst",
+      "cn": "CLB-350",
+      "quantity": 1,
+      "price": 0.39,
+      "image_url": "https://cards.scryfall.io/normal/front/e/f/efcc59e2-5976-4895-89f5-a80fd57a0fe2.jpg",
+      "type_line": "Land \u2014 Gate"
+    },
+    {
+      "name": "Basilisk Gate",
+      "set": "m3c",
+      "cn": "320",
+      "quantity": 1,
+      "price": 0.34,
+      "image_url": "https://cards.scryfall.io/normal/front/9/3/935f3dfa-7d8d-459a-8ac2-37892cb9545f.jpg",
+      "type_line": "Land \u2014 Gate"
+    },
+    {
+      "name": "Tavern Brawler",
+      "set": "clb",
+      "cn": "200",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/b/0/b07f8fc3-83a5-4e0a-b87f-ce415292c790.jpg",
+      "type_line": "Legendary Enchantment \u2014 Background"
+    },
+    {
+      "name": "Thran Portal",
+      "set": "pdmu",
+      "cn": "259p",
+      "quantity": 1,
+      "price": 0.68,
+      "image_url": "https://cards.scryfall.io/normal/front/e/a/eae6fb49-dec5-4f57-8039-4e2194d0697b.jpg",
+      "type_line": "Land \u2014 Gate"
+    },
+    {
+      "name": "Gaea's Gift",
+      "set": "bro",
+      "cn": "182",
+      "quantity": 1,
+      "price": 1.02,
+      "image_url": "https://cards.scryfall.io/normal/front/5/5/5503186a-46fe-4956-8ae3-5ab3343f8a93.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Kami of Whispered Hopes",
+      "set": "mom",
+      "cn": "196",
+      "quantity": 1,
+      "price": 2.4,
+      "image_url": "https://cards.scryfall.io/normal/front/5/c/5c644650-3861-4a78-9e39-a413b073ddac.jpg",
+      "type_line": "Creature \u2014 Spirit"
+    },
+    {
+      "name": "Open the Way",
+      "set": "soc",
+      "cn": "280",
+      "quantity": 1,
+      "price": 1.06,
+      "image_url": "https://cards.scryfall.io/normal/front/5/d/5d928e0d-a586-4de1-a469-0591122659fa.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Wose Pathfinder",
+      "set": "ltr",
+      "cn": "190",
+      "quantity": 1,
+      "price": 0.04,
+      "image_url": "https://cards.scryfall.io/normal/front/6/5/6589b339-9067-4e9b-bfdb-c49f8b3ef2d4.jpg",
+      "type_line": "Creature \u2014 Human Shaman"
+    },
+    {
+      "name": "Growing Rites of Itlimoc // Itlimoc, Cradle of the Sun",
+      "set": "xln",
+      "cn": "191",
+      "quantity": 1,
+      "price": 4.91,
+      "image_url": "https://cards.scryfall.io/normal/front/b/3/b3b87bfc-f97f-4734-94f6-e3e2f335fc4d.jpg",
+      "type_line": "Legendary Enchantment // Legendary Land"
+    },
+    {
+      "name": "Nykthos, Shrine to Nyx",
+      "set": "ths",
+      "cn": "223",
+      "quantity": 1,
+      "price": 35.04,
+      "image_url": "https://cards.scryfall.io/normal/front/8/3/834b27a0-dfd7-4f96-8cde-cacac4b24acc.jpg",
+      "type_line": "Legendary Land"
+    },
+    {
+      "name": "Elder of Laurels",
+      "set": "isd",
+      "cn": "177",
+      "quantity": 1,
+      "price": 0.24,
+      "image_url": "https://cards.scryfall.io/normal/front/3/2/32b82ef0-c974-4357-b21a-4c2a28ec7279.jpg",
+      "type_line": "Creature \u2014 Human Advisor"
+    },
+    {
+      "name": "Guildless Commons",
+      "set": "cmr",
+      "cn": "351",
+      "quantity": 1,
+      "price": 2.2,
+      "image_url": "https://cards.scryfall.io/normal/front/c/6/c6c8d290-b5d2-412c-8db9-5a6246f430e8.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Snakeskin Veil",
+      "set": "fdn",
+      "cn": "233",
+      "quantity": 1,
+      "price": 0.12,
+      "image_url": "https://cards.scryfall.io/normal/front/6/c/6cc4c21d-9bdc-4490-9203-17f51db0ddd1.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Svella, Ice Shaper",
+      "set": "khm",
+      "cn": "331",
+      "quantity": 1,
+      "price": 0.17,
+      "image_url": "https://cards.scryfall.io/normal/front/5/e/5ec553af-5254-4812-bb68-cd6d853f693a.jpg",
+      "type_line": "Legendary Snow Creature \u2014 Troll Warrior"
+    },
+    {
+      "name": "Guardian Augmenter",
+      "set": "soc",
+      "cn": "271",
+      "quantity": 1,
+      "price": 1.68,
+      "image_url": "https://cards.scryfall.io/normal/front/7/8/78ba1a2a-a2dd-4e90-900e-1421b5e3924a.jpg",
+      "type_line": "Creature \u2014 Troll Wizard"
+    },
+    {
+      "name": "Yavimaya, Cradle of Growth",
+      "set": "m3c",
+      "cn": "409",
+      "quantity": 1,
+      "price": 10.38,
+      "image_url": "https://cards.scryfall.io/normal/front/8/a/8a12b4f7-8f6b-4a3c-9114-825e1b2099a0.jpg",
+      "type_line": "Legendary Land"
+    },
+    {
+      "name": "Agatha's Soul Cauldron",
+      "set": "pwoe",
+      "cn": "242p",
+      "quantity": 1,
+      "price": 26.82,
+      "image_url": "https://cards.scryfall.io/normal/front/c/b/cb1bbd0b-a05a-4a6e-83d3-4bd067b7ef3a.jpg",
+      "type_line": "Legendary Artifact"
+    },
+    {
+      "name": "Swashbuckler's Whip",
+      "set": "lci",
+      "cn": "263",
+      "quantity": 1,
+      "price": 0.09,
+      "image_url": "https://cards.scryfall.io/normal/front/2/4/24a85c52-e5b5-4d65-931c-eacc0cf0fb31.jpg",
+      "type_line": "Artifact \u2014 Equipment"
+    },
+    {
+      "name": "Arid Archway",
+      "set": "otj",
+      "cn": "252",
+      "quantity": 1,
+      "price": 0.56,
+      "image_url": "https://cards.scryfall.io/normal/front/3/f/3f8c8fa2-12ab-4f6a-9f7a-2bc69e9ba024.jpg",
+      "type_line": "Land \u2014 Desert"
+    },
+    {
+      "name": "Bristly Bill, Spine Sower",
+      "set": "potj",
+      "cn": "157p",
+      "quantity": 1,
+      "price": 21.65,
+      "image_url": "https://cards.scryfall.io/normal/front/2/6/26df2161-e168-4ea4-8848-fae9cebf160c.jpg",
+      "type_line": "Legendary Creature \u2014 Plant Druid"
+    },
+    {
+      "name": "Bala Ged Recovery // Bala Ged Sanctuary",
+      "set": "znr",
+      "cn": "180",
+      "quantity": 1,
+      "price": 5.47,
+      "image_url": "https://cards.scryfall.io/normal/front/c/5/c5cb3052-358d-44a7-8cfd-cd31b236494a.jpg",
+      "type_line": "Sorcery // Land"
+    },
+    {
+      "name": "Collective Resistance",
+      "set": "mh3",
+      "cn": "147",
+      "quantity": 1,
+      "price": 2.07,
+      "image_url": "https://cards.scryfall.io/normal/front/f/2/f260bd08-68b6-44f4-ace9-e298cb13d82e.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Fanatic of Rhonas",
+      "set": "mh3",
+      "cn": "152",
+      "quantity": 1,
+      "price": 8.51,
+      "image_url": "https://cards.scryfall.io/normal/front/1/f/1f9fb33a-3b39-4aff-93b8-aedafe0ea694.jpg",
+      "type_line": "Creature \u2014 Snake Druid"
+    },
+    {
+      "name": "Talon Gates of Madara",
+      "set": "m3c",
+      "cn": "134",
+      "quantity": 1,
+      "price": 16.49,
+      "image_url": "https://cards.scryfall.io/normal/front/c/5/c565f8fe-acf7-40dd-8100-8f692d1e232c.jpg",
+      "type_line": "Land \u2014 Gate"
+    },
+    {
+      "name": "Untimely Malfunction",
+      "set": "dsk",
+      "cn": "161",
+      "quantity": 1,
+      "price": 5.91,
+      "image_url": "https://cards.scryfall.io/normal/front/8/5/857bfb0e-17dc-4dda-bc37-3df927a9eae6.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Redshift, Rocketeer Chief",
+      "set": "dft",
+      "cn": "218",
+      "quantity": 1,
+      "price": 0.27,
+      "image_url": "https://cards.scryfall.io/normal/front/5/f/5fba3820-32ba-47e9-9fa8-f985ff471b3f.jpg",
+      "type_line": "Legendary Creature \u2014 Goblin Pilot"
+    },
+    {
+      "name": "Beastrider Vanguard",
+      "set": "dft",
+      "cn": "154",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/f/4/f4b99a61-49f1-46a2-9eb7-b6c88c236215.jpg",
+      "type_line": "Creature \u2014 Human Knight"
+    },
+    {
+      "name": "Ouroboroid",
+      "set": "eoe",
+      "cn": "201",
+      "quantity": 1,
+      "price": 32.45,
+      "image_url": "https://cards.scryfall.io/normal/front/2/0/209c591a-4ab2-4e89-9523-a7b766cf4e51.jpg",
+      "type_line": "Creature \u2014 Plant Wurm"
+    },
+    {
+      "name": "Survey Mechan",
+      "set": "eoe",
+      "cn": "245",
+      "quantity": 1,
+      "price": 0.09,
+      "image_url": "https://cards.scryfall.io/normal/front/9/b/9b4278ea-6cd8-45ad-b024-daf3dedd29e0.jpg",
+      "type_line": "Artifact Creature \u2014 Robot"
+    },
+    {
+      "name": "Evendo, Waking Haven",
+      "set": "peoe",
+      "cn": "253p",
+      "quantity": 1,
+      "price": 11.89,
+      "image_url": "https://cards.scryfall.io/normal/front/4/0/40a5d9db-6105-4d16-9605-90c3b5324c72.jpg",
+      "type_line": "Land \u2014 Planet"
+    },
+    {
+      "name": "Zookeeper Mechan",
+      "set": "eoe",
+      "cn": "170",
+      "quantity": 1,
+      "price": 0.12,
+      "image_url": "https://cards.scryfall.io/normal/front/8/d/8d5cd0be-4337-4aba-a4f6-5adab7735a73.jpg",
+      "type_line": "Artifact Creature \u2014 Robot"
+    },
+    {
+      "name": "Fire Nation Archers",
+      "set": "tle",
+      "cn": "237",
+      "quantity": 1,
+      "price": 0.5,
+      "image_url": "https://cards.scryfall.io/normal/front/e/8/e83ee667-7726-42e9-9483-6cfc6f9ce638.jpg",
+      "type_line": "Creature \u2014 Human Archer"
+    },
+    {
+      "name": "Origin of Metalbending",
+      "set": "tla",
+      "cn": "187",
+      "quantity": 1,
+      "price": 0.17,
+      "image_url": "https://cards.scryfall.io/normal/front/2/5/25749f9a-260d-4bdc-bd28-429c12faa4a5.jpg",
+      "type_line": "Instant \u2014 Lesson"
+    },
+    {
+      "name": "Shang-Chi, Master of Kung Fu",
+      "set": "msh",
+      "cn": "187",
+      "quantity": 1,
+      "price": 8.19,
+      "image_url": "https://cards.scryfall.io/normal/front/2/e/2edbb62f-ad45-4422-850b-68dcc18b4c73.jpg",
+      "type_line": "Legendary Creature \u2014 Human Warrior Hero"
+    },
+    {
+      "name": "Agatha of the Vile Cauldron",
+      "set": "woe",
+      "cn": "199",
+      "quantity": 1,
+      "price": 1.25,
+      "image_url": "https://cards.scryfall.io/normal/front/d/6/d6c48f07-63b7-4a60-8da6-ce77405abf1e.jpg",
+      "type_line": "Legendary Creature \u2014 Human Warlock"
+    }
+  ],
+  "total_cards": 101,
+  "author": "Solmejk",
+  "value": 337.03
+}

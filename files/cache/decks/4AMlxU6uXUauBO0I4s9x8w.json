@@ -1,0 +1,803 @@
+{
+  "name": "Edgar Markov",
+  "format": "commander",
+  "commanders": [
+    {
+      "name": "Edgar Markov",
+      "set": "inr",
+      "cn": "234",
+      "quantity": 1,
+      "price": 30.13,
+      "image_url": "https://cards.scryfall.io/normal/front/a/5/a577ba08-0aa8-45be-aa83-d5078770127c.jpg",
+      "type_line": "Legendary Creature \u2014 Vampire Knight"
+    }
+  ],
+  "cards": [
+    {
+      "name": "Mountain",
+      "set": "jmp",
+      "cn": "64",
+      "quantity": 5,
+      "price": 0.59,
+      "image_url": "https://cards.scryfall.io/normal/front/c/b/cb524a84-34a4-43bf-9872-b4a053a141b5.jpg",
+      "type_line": "Basic Land \u2014 Mountain"
+    },
+    {
+      "name": "Plains",
+      "set": "pca",
+      "cn": "133",
+      "quantity": 5,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/8/2/823a3cdb-2e98-46d0-9a6e-18ff967de644.jpg",
+      "type_line": "Basic Land \u2014 Plains"
+    },
+    {
+      "name": "Swamp",
+      "set": "m21",
+      "cn": "266",
+      "quantity": 6,
+      "price": 0.04,
+      "image_url": "https://cards.scryfall.io/normal/front/3/0/30b3d647-3546-4ade-b395-f2370750a7a6.jpg",
+      "type_line": "Basic Land \u2014 Swamp"
+    },
+    {
+      "name": "Temple of Malice",
+      "set": "fdn",
+      "cn": "701",
+      "quantity": 1,
+      "price": 0.2,
+      "image_url": "https://cards.scryfall.io/normal/front/d/7/d78eccc4-1500-43f1-94f5-b39c160b6381.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Arcane Signet",
+      "set": "drc",
+      "cn": "51",
+      "quantity": 1,
+      "price": 0.55,
+      "image_url": "https://cards.scryfall.io/normal/front/8/3/8380b6c9-b4fd-41fa-8eca-d48e00edef30.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Command Tower",
+      "set": "drc",
+      "cn": "59",
+      "quantity": 1,
+      "price": 0.23,
+      "image_url": "https://cards.scryfall.io/normal/front/e/1/e1fee302-b37b-4057-934f-cf212e6ecc17.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Heraldic Banner",
+      "set": "fdn",
+      "cn": "254",
+      "quantity": 1,
+      "price": 0.25,
+      "image_url": "https://cards.scryfall.io/normal/front/7/4/743ea709-dbb3-4db8-a2ce-544f47eb6339.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Wind-Scarred Crag",
+      "set": "dft",
+      "cn": "271",
+      "quantity": 1,
+      "price": 0.09,
+      "image_url": "https://cards.scryfall.io/normal/front/8/8/882969d8-7e3e-4f32-858a-00da20c67b83.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Bojuka Bog",
+      "set": "dsc",
+      "cn": "265",
+      "quantity": 1,
+      "price": 1.24,
+      "image_url": "https://cards.scryfall.io/normal/front/e/2/e286c618-ef42-433f-ade9-0c1235a295e3.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Blood Artist",
+      "set": "inr",
+      "cn": "97",
+      "quantity": 1,
+      "price": 1.8,
+      "image_url": "https://cards.scryfall.io/normal/front/0/3/036f387a-8dee-482e-b3e3-cf79b54c61e1.jpg",
+      "type_line": "Creature \u2014 Vampire"
+    },
+    {
+      "name": "Bloodmad Vampire",
+      "set": "inr",
+      "cn": "145",
+      "quantity": 1,
+      "price": 0.13,
+      "image_url": "https://cards.scryfall.io/normal/front/8/a/8a9747c1-ef2c-4c61-9529-abfb6ae0f964.jpg",
+      "type_line": "Creature \u2014 Vampire Berserker"
+    },
+    {
+      "name": "Burnished Hart",
+      "set": "fdn",
+      "cn": "250",
+      "quantity": 1,
+      "price": 0.11,
+      "image_url": "https://cards.scryfall.io/normal/front/6/5/65ebbff0-fbe6-4310-a33f-e00bb2534979.jpg",
+      "type_line": "Artifact Creature \u2014 Elk"
+    },
+    {
+      "name": "Driver of the Dead",
+      "set": "fdn",
+      "cn": "605",
+      "quantity": 1,
+      "price": 0.09,
+      "image_url": "https://cards.scryfall.io/normal/front/4/4/4443696a-0b9a-4081-91aa-800b5c4065d2.jpg",
+      "type_line": "Creature \u2014 Vampire"
+    },
+    {
+      "name": "Evolving Wilds",
+      "set": "drc",
+      "cn": "153",
+      "quantity": 1,
+      "price": 0.13,
+      "image_url": "https://cards.scryfall.io/normal/front/8/6/860fef67-8a14-4c67-a86f-4dcd682d1321.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Exsanguinate",
+      "set": "fdn",
+      "cn": "173",
+      "quantity": 1,
+      "price": 0.39,
+      "image_url": "https://cards.scryfall.io/normal/front/f/1/f11d7311-4066-4a5d-ba28-9857fa707a0b.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Orzhov Basilica",
+      "set": "drc",
+      "cn": "164",
+      "quantity": 1,
+      "price": 0.2,
+      "image_url": "https://cards.scryfall.io/normal/front/c/c/cc8f8ede-9620-4f7f-8326-a75031ef6ec1.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Phyrexian Arena",
+      "set": "one",
+      "cn": "104",
+      "quantity": 1,
+      "price": 3.64,
+      "image_url": "https://cards.scryfall.io/normal/front/5/4/54f69d43-de01-46a8-b102-b47e23e0e947.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Read the Bones",
+      "set": "dsc",
+      "cn": "154",
+      "quantity": 1,
+      "price": 0.43,
+      "image_url": "https://cards.scryfall.io/normal/front/b/3/b3198f96-f9d8-494f-a556-24ce3ad3895d.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Scoured Barrens",
+      "set": "fdn",
+      "cn": "266",
+      "quantity": 1,
+      "price": 0.08,
+      "image_url": "https://cards.scryfall.io/normal/front/2/6/2632a4b2-9ca6-4b67-9a99-14f52ad3dc41.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Sol Ring",
+      "set": "drc",
+      "cn": "56",
+      "quantity": 1,
+      "price": 1.4,
+      "image_url": "https://cards.scryfall.io/normal/front/f/e/fe202721-c5be-46de-9fb3-ac18c699e10d.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Swords to Plowshares",
+      "set": "drc",
+      "cn": "37",
+      "quantity": 1,
+      "price": 1.87,
+      "image_url": "https://cards.scryfall.io/normal/front/3/b/3b701a88-6074-476f-b87c-9a6d5d22c414.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Herald's Horn",
+      "set": "ltc",
+      "cn": "280",
+      "quantity": 1,
+      "price": 4.2,
+      "image_url": "https://cards.scryfall.io/normal/front/4/c/4c0d09ac-ef6e-4b66-9e47-59cc97dd7d6b.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Vampire Nighthawk",
+      "set": "fdn",
+      "cn": "186",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/0/a/0a1934ab-3171-4fc6-8033-ad998899ba73.jpg",
+      "type_line": "Creature \u2014 Vampire Shaman"
+    },
+    {
+      "name": "Sorin, Imperious Bloodlord",
+      "set": "inr",
+      "cn": "133",
+      "quantity": 1,
+      "price": 5.15,
+      "image_url": "https://cards.scryfall.io/normal/front/2/1/219d3e48-e0b1-472d-ac45-11c14b292c9e.jpg",
+      "type_line": "Legendary Planeswalker \u2014 Sorin"
+    },
+    {
+      "name": "Basalt Monolith",
+      "set": "c13",
+      "cn": "237",
+      "quantity": 1,
+      "price": 3.24,
+      "image_url": "https://cards.scryfall.io/normal/front/7/7/7770e48e-72e1-4475-a4b5-c1c561a1beaa.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Boros Guildgate",
+      "set": "fdn",
+      "cn": "684",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/3/e/3e3c74ea-40e9-4ad9-a491-c208403b68ad.jpg",
+      "type_line": "Land \u2014 Gate"
+    },
+    {
+      "name": "Commander's Sphere",
+      "set": "drc",
+      "cn": "125",
+      "quantity": 1,
+      "price": 0.16,
+      "image_url": "https://cards.scryfall.io/normal/front/3/a/3adcc4c3-9305-4394-a64f-fd0fa107cbf9.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Exotic Orchard",
+      "set": "drc",
+      "cn": "155",
+      "quantity": 1,
+      "price": 0.25,
+      "image_url": "https://cards.scryfall.io/normal/front/0/f/0f31cb4c-c0f4-42fc-9661-723f78ee4d56.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Grave Pact",
+      "set": "wot",
+      "cn": "73",
+      "quantity": 1,
+      "price": 24.11,
+      "image_url": "https://cards.scryfall.io/normal/front/f/2/f24021ca-f493-4de8-9e65-01bf10fe2920.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Orzhov Signet",
+      "set": "drc",
+      "cn": "134",
+      "quantity": 1,
+      "price": 0.36,
+      "image_url": "https://cards.scryfall.io/normal/front/c/a/ca0d3984-fbb3-4661-a424-f79d2253e057.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Swiftfoot Boots",
+      "set": "fdn",
+      "cn": "355",
+      "quantity": 1,
+      "price": 2.65,
+      "image_url": "https://cards.scryfall.io/normal/front/3/e/3e9b53da-4744-429d-97c6-f7ee4d568731.jpg",
+      "type_line": "Artifact \u2014 Equipment"
+    },
+    {
+      "name": "Terramorphic Expanse",
+      "set": "drc",
+      "cn": "179",
+      "quantity": 1,
+      "price": 0.18,
+      "image_url": "https://cards.scryfall.io/normal/front/e/f/ef995c58-19ea-4f09-b2c3-7bb476058ced.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Rakdos Guildgate",
+      "set": "fdn",
+      "cn": "693",
+      "quantity": 1,
+      "price": 0.22,
+      "image_url": "https://cards.scryfall.io/normal/front/e/1/e1f01964-c610-4d0f-a2b4-f52e46dc50d2.jpg",
+      "type_line": "Land \u2014 Gate"
+    },
+    {
+      "name": "Blind Obedience",
+      "set": "wot",
+      "cn": "1",
+      "quantity": 1,
+      "price": 4.3,
+      "image_url": "https://cards.scryfall.io/normal/front/1/c/1cb0ea8e-0707-46a8-9dc6-77c17244fd7b.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Orzhov Guildgate",
+      "set": "fdn",
+      "cn": "692",
+      "quantity": 1,
+      "price": 0.16,
+      "image_url": "https://cards.scryfall.io/normal/front/a/9/a917be03-0c17-4454-b044-c4375e5c8085.jpg",
+      "type_line": "Land \u2014 Gate"
+    },
+    {
+      "name": "Pulse Tracker",
+      "set": "fdn",
+      "cn": "612",
+      "quantity": 1,
+      "price": 0.15,
+      "image_url": "https://cards.scryfall.io/normal/front/f/d/fdcbbe4d-5c93-4b14-8123-cd835452870f.jpg",
+      "type_line": "Creature \u2014 Vampire Rogue"
+    },
+    {
+      "name": "Indulgent Aristocrat",
+      "set": "inr",
+      "cn": "118",
+      "quantity": 1,
+      "price": 0.21,
+      "image_url": "https://cards.scryfall.io/normal/front/0/7/07015524-874f-4856-a5c1-3148bd126886.jpg",
+      "type_line": "Creature \u2014 Vampire Noble"
+    },
+    {
+      "name": "Stensia Masquerade",
+      "set": "inr",
+      "cn": "172",
+      "quantity": 1,
+      "price": 0.24,
+      "image_url": "https://cards.scryfall.io/normal/front/f/a/faaf031f-2c77-4248-8a29-f47e64773cfd.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Westvale Abbey // Ormendahl, Profane Prince",
+      "set": "soi",
+      "cn": "281",
+      "quantity": 1,
+      "price": 1.54,
+      "image_url": "https://cards.scryfall.io/normal/front/c/1/c1f53d7a-9dad-46e8-b686-cd1362867445.jpg",
+      "type_line": "Land // Legendary Creature \u2014 Demon"
+    },
+    {
+      "name": "Cryptolith Fragment // Aurora of Emrakul",
+      "set": "inr",
+      "cn": "260",
+      "quantity": 1,
+      "price": 0.23,
+      "image_url": "https://cards.scryfall.io/normal/front/2/6/262b7b55-0b32-4c4f-a2ca-02f0b83fa7a2.jpg",
+      "type_line": "Artifact // Creature \u2014 Eldrazi Reflection"
+    },
+    {
+      "name": "Olivia's Dragoon",
+      "set": "inr",
+      "cn": "127",
+      "quantity": 1,
+      "price": 0.04,
+      "image_url": "https://cards.scryfall.io/normal/front/5/7/571a9e92-6f34-4bf4-b7f4-15d12560efb6.jpg",
+      "type_line": "Creature \u2014 Vampire Berserker"
+    },
+    {
+      "name": "Smothering Tithe",
+      "set": "rna",
+      "cn": "22",
+      "quantity": 1,
+      "price": 32.27,
+      "image_url": "https://cards.scryfall.io/normal/front/7/a/7af082fa-86a3-4f7b-966d-2be1f1d0c0bc.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Bloodfell Caves",
+      "set": "fdn",
+      "cn": "259",
+      "quantity": 1,
+      "price": 0.04,
+      "image_url": "https://cards.scryfall.io/normal/front/8/b/8b90dc92-cb66-41d9-89f9-2b6e3cfc8082.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Temple of Silence",
+      "set": "drc",
+      "cn": "178",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/9/e/9e283d6e-db4e-4fec-92d4-1e035f253400.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Temple of Triumph",
+      "set": "fdn",
+      "cn": "705",
+      "quantity": 1,
+      "price": 0.17,
+      "image_url": "https://cards.scryfall.io/normal/front/d/2/d2f58450-838d-4404-a68f-159e82b0e58d.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Midnight Reaper",
+      "set": "drc",
+      "cn": "44",
+      "quantity": 1,
+      "price": 0.31,
+      "image_url": "https://cards.scryfall.io/normal/front/3/3/33c16202-4d7f-449c-8b29-144b2a9fda9a.jpg",
+      "type_line": "Creature \u2014 Zombie Knight"
+    },
+    {
+      "name": "Bloodline Keeper // Lord of Lineage",
+      "set": "inr",
+      "cn": "98",
+      "quantity": 1,
+      "price": 6.38,
+      "image_url": "https://cards.scryfall.io/normal/front/6/0/60658907-dd63-478d-a66a-123e4e9d2a00.jpg",
+      "type_line": "Creature \u2014 Vampire // Creature \u2014 Vampire"
+    },
+    {
+      "name": "Terminus",
+      "set": "dsc",
+      "cn": "70",
+      "quantity": 1,
+      "price": 0.46,
+      "image_url": "https://cards.scryfall.io/normal/front/4/c/4c53c684-37f9-4b95-88be-a42b9600c47c.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Vampiric Rites",
+      "set": "fdn",
+      "cn": "615",
+      "quantity": 1,
+      "price": 0.16,
+      "image_url": "https://cards.scryfall.io/normal/front/9/a/9ae0b1e0-a481-4a98-b67b-0cf8bac53fdd.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Caves of Koilos",
+      "set": "drc",
+      "cn": "148",
+      "quantity": 1,
+      "price": 0.93,
+      "image_url": "https://cards.scryfall.io/normal/front/1/8/18e5a0d3-d132-40e2-85ae-a1b743dfdd33.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Falkenrath Torturer",
+      "set": "inr",
+      "cn": "109",
+      "quantity": 1,
+      "price": 0.05,
+      "image_url": "https://cards.scryfall.io/normal/front/e/0/e0e896a7-fd51-4c24-b374-c4eace9ed1a2.jpg",
+      "type_line": "Creature \u2014 Vampire"
+    },
+    {
+      "name": "Talisman of Conviction",
+      "set": "ltc",
+      "cn": "285",
+      "quantity": 1,
+      "price": 0.37,
+      "image_url": "https://cards.scryfall.io/normal/front/c/5/c542cc26-f61a-416b-866e-8c500ff24783.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Mentor of the Meek",
+      "set": "inr",
+      "cn": "34",
+      "quantity": 1,
+      "price": 0.18,
+      "image_url": "https://cards.scryfall.io/normal/front/2/8/280ca0f4-be07-452a-bbc0-c25570f14008.jpg",
+      "type_line": "Creature \u2014 Human Soldier"
+    },
+    {
+      "name": "Bontu's Monument",
+      "set": "drc",
+      "cn": "124",
+      "quantity": 1,
+      "price": 3.73,
+      "image_url": "https://cards.scryfall.io/normal/front/b/a/ba25bdf9-b6bf-4f4f-af37-8bfb84a74c97.jpg",
+      "type_line": "Legendary Artifact"
+    },
+    {
+      "name": "Kalastria Highborn",
+      "set": "fdn",
+      "cn": "607",
+      "quantity": 1,
+      "price": 0.29,
+      "image_url": "https://cards.scryfall.io/normal/front/1/a/1a52f6ef-7759-4be3-8b80-a57e9d6ae386.jpg",
+      "type_line": "Creature \u2014 Vampire Shaman"
+    },
+    {
+      "name": "Legion Lieutenant",
+      "set": "rix",
+      "cn": "163",
+      "quantity": 1,
+      "price": 0.67,
+      "image_url": "https://cards.scryfall.io/normal/front/3/3/33f7ff99-65d6-4e97-bdfa-b6e6eac0588f.jpg",
+      "type_line": "Creature \u2014 Vampire Knight"
+    },
+    {
+      "name": "Vanquisher's Banner",
+      "set": "ltc",
+      "cn": "289",
+      "quantity": 1,
+      "price": 4.81,
+      "image_url": "https://cards.scryfall.io/normal/front/e/7/e715f4e0-6ef4-40da-bc6c-84709e910cad.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Debt to the Deathless",
+      "set": "rvr",
+      "cn": "176",
+      "quantity": 1,
+      "price": 0.3,
+      "image_url": "https://cards.scryfall.io/normal/front/a/4/a42f8d69-dff4-4c35-a5fc-527ea5f1d21b.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Stromkirk Noble",
+      "set": "fdn",
+      "cn": "632",
+      "quantity": 1,
+      "price": 0.22,
+      "image_url": "https://cards.scryfall.io/normal/front/0/f/0f306c7e-cacc-4c26-a3f1-fad4f3ff7cf3.jpg",
+      "type_line": "Creature \u2014 Vampire Noble"
+    },
+    {
+      "name": "Nullpriest of Oblivion",
+      "set": "fdn",
+      "cn": "611",
+      "quantity": 1,
+      "price": 0.26,
+      "image_url": "https://cards.scryfall.io/normal/front/b/2/b2c7613c-38fc-49c3-93ee-1df93136455a.jpg",
+      "type_line": "Creature \u2014 Vampire Cleric"
+    },
+    {
+      "name": "Marauding Blight-Priest",
+      "set": "fdn",
+      "cn": "178",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/5/f/5f70dafc-c638-4ec0-ab5b-62998f752720.jpg",
+      "type_line": "Creature \u2014 Vampire Cleric"
+    },
+    {
+      "name": "Timely Ward",
+      "set": "dsc",
+      "cn": "107",
+      "quantity": 1,
+      "price": 4.09,
+      "image_url": "https://cards.scryfall.io/normal/front/d/6/d61f8db1-0148-47bd-ae97-9aedccb83813.jpg",
+      "type_line": "Enchantment \u2014 Aura"
+    },
+    {
+      "name": "Door of Destinies",
+      "set": "ltc",
+      "cn": "277",
+      "quantity": 1,
+      "price": 4.43,
+      "image_url": "https://cards.scryfall.io/normal/front/e/f/ef038cae-d00b-42f4-81ae-09929b05d881.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Path of Ancestry",
+      "set": "drc",
+      "cn": "61",
+      "quantity": 1,
+      "price": 0.15,
+      "image_url": "https://cards.scryfall.io/normal/front/1/4/14313a22-93dc-46fc-aeb6-09ab3b6f8686.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Immersturm Predator",
+      "set": "fdn",
+      "cn": "660",
+      "quantity": 1,
+      "price": 0.2,
+      "image_url": "https://cards.scryfall.io/normal/front/5/2/52dfc234-e87a-4594-8dcf-0a2f95eedc97.jpg",
+      "type_line": "Creature \u2014 Vampire Dragon"
+    },
+    {
+      "name": "Vanquish the Horde",
+      "set": "inr",
+      "cn": "49",
+      "quantity": 1,
+      "price": 0.61,
+      "image_url": "https://cards.scryfall.io/normal/front/6/8/68dea60e-1bd9-4fb5-bb0c-668dfa9b1eee.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Morbid Opportunist",
+      "set": "inr",
+      "cn": "124",
+      "quantity": 1,
+      "price": 0.31,
+      "image_url": "https://cards.scryfall.io/normal/front/1/b/1bfd3be4-2cea-4a88-a55f-e6ebeecd4c96.jpg",
+      "type_line": "Creature \u2014 Human Rogue"
+    },
+    {
+      "name": "Monologue Tax",
+      "set": "dsc",
+      "cn": "100",
+      "quantity": 1,
+      "price": 1.87,
+      "image_url": "https://cards.scryfall.io/normal/front/4/b/4ba2c9b9-06bc-4bf2-8df5-f0748fb2b8eb.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Gluttonous Guest",
+      "set": "inr",
+      "cn": "112",
+      "quantity": 1,
+      "price": 0.1,
+      "image_url": "https://cards.scryfall.io/normal/front/2/5/25e98125-6c36-4571-afc5-2d018750eb57.jpg",
+      "type_line": "Creature \u2014 Vampire"
+    },
+    {
+      "name": "Belligerent Guest",
+      "set": "vow",
+      "cn": "144",
+      "quantity": 1,
+      "price": 0.1,
+      "image_url": "https://cards.scryfall.io/normal/front/1/b/1bb844c4-f41c-4411-a80a-c19e1d97b272.jpg",
+      "type_line": "Creature \u2014 Vampire"
+    },
+    {
+      "name": "Blood Hypnotist",
+      "set": "vow",
+      "cn": "145",
+      "quantity": 1,
+      "price": 0.06,
+      "image_url": "https://cards.scryfall.io/normal/front/d/8/d85e0477-9176-4a3e-badc-f1c1c734e59c.jpg",
+      "type_line": "Creature \u2014 Vampire"
+    },
+    {
+      "name": "Bloodtithe Harvester",
+      "set": "inr",
+      "cn": "233",
+      "quantity": 1,
+      "price": 0.16,
+      "image_url": "https://cards.scryfall.io/normal/front/a/e/ae4aec0d-c853-44e6-9f51-cbecf413ea14.jpg",
+      "type_line": "Creature \u2014 Vampire"
+    },
+    {
+      "name": "Voldaren Epicure",
+      "set": "inr",
+      "cn": "182",
+      "quantity": 1,
+      "price": 0.15,
+      "image_url": "https://cards.scryfall.io/normal/front/e/8/e8fe855c-fe94-4de7-a033-9892a9d6ee0e.jpg",
+      "type_line": "Creature \u2014 Vampire"
+    },
+    {
+      "name": "Blood Petal Celebrant",
+      "set": "inr",
+      "cn": "144",
+      "quantity": 1,
+      "price": 0.07,
+      "image_url": "https://cards.scryfall.io/normal/front/9/6/96db3d95-c0b8-42ff-956c-837f5f9cd40d.jpg",
+      "type_line": "Creature \u2014 Vampire"
+    },
+    {
+      "name": "Garna, Bloodfist of Keld",
+      "set": "fdn",
+      "cn": "658",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/5/d/5d7fcd03-fffe-467a-88a5-e583e32afd7a.jpg",
+      "type_line": "Legendary Creature \u2014 Human Berserker"
+    },
+    {
+      "name": "Vengeful Bloodwitch",
+      "set": "fdn",
+      "cn": "76",
+      "quantity": 1,
+      "price": 0.2,
+      "image_url": "https://cards.scryfall.io/normal/front/b/d/bd0c12dd-f138-45c0-9614-d83a1d8e8399.jpg",
+      "type_line": "Creature \u2014 Vampire Warlock"
+    },
+    {
+      "name": "Final Vengeance",
+      "set": "dsk",
+      "cn": "99",
+      "quantity": 1,
+      "price": 0.13,
+      "image_url": "https://cards.scryfall.io/normal/front/6/4/648da934-71f6-4945-a08f-09698414417b.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Vampire Gourmand",
+      "set": "fdn",
+      "cn": "74",
+      "quantity": 1,
+      "price": 0.17,
+      "image_url": "https://cards.scryfall.io/normal/front/9/1/917514c0-9cd5-4b97-85b9-c4f753560ad4.jpg",
+      "type_line": "Creature \u2014 Vampire"
+    },
+    {
+      "name": "Divine Resilience",
+      "set": "fdn",
+      "cn": "10",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/f/3/f3a08245-a535-4d24-b8c0-78759bb9c4b0.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Ravenous Amulet",
+      "set": "fdn",
+      "cn": "131",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/8/0/80cadee5-6f26-4440-ad31-a8e573a90436.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Accursed Duneyard",
+      "set": "drc",
+      "cn": "20",
+      "quantity": 1,
+      "price": 0.97,
+      "image_url": "https://cards.scryfall.io/normal/front/b/d/bd9e6ba8-1c5e-4416-8bff-90db3b3b1f41.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Gas Guzzler",
+      "set": "dft",
+      "cn": "338",
+      "quantity": 1,
+      "price": 0.24,
+      "image_url": "https://cards.scryfall.io/normal/front/3/1/3150199e-9e4f-486d-bfb0-fc2a9feb8536.jpg",
+      "type_line": "Creature \u2014 Vampire Rogue"
+    },
+    {
+      "name": "Decanter of Endless Water",
+      "set": "clb",
+      "cn": "309",
+      "quantity": 1,
+      "price": 2.57,
+      "image_url": "https://cards.scryfall.io/normal/front/5/1/518bbc36-58ea-44c4-a857-75a3aff058f5.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Maximum Overdrive",
+      "set": "dft",
+      "cn": "96",
+      "quantity": 1,
+      "price": 0.09,
+      "image_url": "https://cards.scryfall.io/normal/front/5/f/5f6e5bb2-cfe9-48e5-86f9-e21f3d328327.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Gatekeeper of Malakir",
+      "set": "fdn",
+      "cn": "713",
+      "quantity": 1,
+      "price": 0,
+      "image_url": "https://cards.scryfall.io/normal/front/2/c/2cd61c12-f5e2-4698-9080-097679754f16.jpg",
+      "type_line": "Creature \u2014 Vampire Warrior"
+    },
+    {
+      "name": "Adaptive Automaton",
+      "set": "fdn",
+      "cn": "723",
+      "quantity": 1,
+      "price": 0,
+      "image_url": "https://cards.scryfall.io/normal/front/e/3/e35e614c-51a9-4d5c-b7fa-1a0a87108785.jpg",
+      "type_line": "Artifact Creature \u2014 Construct"
+    },
+    {
+      "name": "Edgar Markov",
+      "set": "inr",
+      "cn": "234",
+      "quantity": 1,
+      "price": 30.13,
+      "image_url": "https://cards.scryfall.io/normal/front/a/5/a577ba08-0aa8-45be-aa83-d5078770127c.jpg",
+      "type_line": "Legendary Creature \u2014 Vampire Knight"
+    }
+  ],
+  "total_cards": 100,
+  "author": "Solmejk",
+  "value": 163.49
+}

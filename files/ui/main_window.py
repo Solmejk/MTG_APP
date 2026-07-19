@@ -13,6 +13,7 @@ from ui.screens.collection import CollectionScreen
 from ui.screens.availability import AvailabilityScreen
 from ui.screens.settings import SettingsScreen
 from ui.components.card_modal import CardModal
+from ui.components.export_modal import ExportModal
 from ui.background import run_in_background
 import clearCache
 import session
@@ -74,6 +75,10 @@ class MainWindow(QMainWindow):
         self.deck_detail_screen.card_clicked.connect(self.card_modal.show_card)
         self.collection_screen.card_clicked.connect(self.card_modal.show_card)
         self.availability_screen.card_clicked.connect(self.card_modal.show_card)
+
+        # Export modal (availability screen)
+        self.export_modal = ExportModal(self)
+        self.availability_screen.export_requested.connect(self.export_modal.show_export)
 
         QTimer.singleShot(50, self._lazy_load_decks)
     
@@ -219,6 +224,8 @@ class MainWindow(QMainWindow):
         super().resizeEvent(event)
         if hasattr(self, "card_modal") and self.card_modal.isVisible():
             self.card_modal.resize(self.size())
+        if hasattr(self, "export_modal") and self.export_modal.isVisible():
+            self.export_modal.resize(self.size())
 
     def _lazy_load_decks(self):
         """Load deck contents off the main thread so the UI stays responsive."""

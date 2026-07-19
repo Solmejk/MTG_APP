@@ -65,13 +65,14 @@ def used_in_decks(decks, card_name: str) -> list[dict]:
 def check_availability(app, checked_cards: list[dict]) -> list[dict]:
     """checked_cards: card dicts as produced by Deck (name/quantity/...).
     Returns each card augmented with owned/used/available/missing/status/
-    missing_cost/owned_printings/used_in_decks, where status is FREE
-    (enough free copies), USED (owned but not enough free copies — some/
-    all tied up in other active decks), or UNOWNED. missing_cost is the
-    cheapest-printing price (via Scryfall) of buying the missing copies —
-    the checked decklist's own printing may not be the cheapest one
-    available. owned_printings/used_in_decks are the per-printing/per-deck
-    breakdowns behind the owned/used totals, for display purposes."""
+    missing_cost/cheapest_set/owned_printings/used_in_decks, where status
+    is FREE (enough free copies), USED (owned but not enough free copies —
+    some/all tied up in other active decks), or UNOWNED. missing_cost is
+    the cheapest-printing price (via Scryfall) of buying the missing
+    copies, and cheapest_set is which set that printing is from — the
+    checked decklist's own printing may not be the cheapest one available.
+    owned_printings/used_in_decks are the per-printing/per-deck breakdowns
+    behind the owned/used totals, for display purposes."""
     computed = []
     for card in checked_cards:
         name = card["name"]
@@ -97,13 +98,17 @@ def check_availability(app, checked_cards: list[dict]) -> list[dict]:
         c[0]["name"] for c in computed
         if c[4] > 0 and c[0]["name"].lower() not in BASIC_LAND_NAMES
     ]
-    prices = scryfall.cheapest_prices_eur(names_needing_price) if names_needing_price else {}
+    price_info = scryfall.cheapest_prices_eur(names_needing_price) if names_needing_price else {}
 
     results = []
     for card, owned, used, available, missing, status in computed:
+        cheapest_set = card.get("set", "")  # fall back to the decklist's own printing
         if missing > 0 and card["name"].lower() not in BASIC_LAND_NAMES:
-            price = prices.get(card["name"])
-            if price is None:  # lookup failed — fall back to the decklist's own price
+            info = price_info.get(card["name"])
+            if info is not None:
+                price = info["price"]
+                cheapest_set = info["set"]
+            else:  # lookup failed — fall back to the decklist's own price
                 price = card.get("price") or 0
         else:
             price = 0
@@ -118,5 +123,6 @@ def check_availability(app, checked_cards: list[dict]) -> list[dict]:
             "status": status,
             "owned_printings": owned_printings(app.collection, card["name"]),
             "used_in_decks": used_in_decks(app.decks, card["name"]),
+            "cheapest_set": cheapest_set,
         })
     return results
