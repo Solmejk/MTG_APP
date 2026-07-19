@@ -1,4 +1,7 @@
-files/cache/
+*.json'
+*.img
+*.jpg
+*.png
 __pycache__/
 venv/
 .venv/
