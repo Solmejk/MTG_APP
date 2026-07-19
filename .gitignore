@@ -1,0 +1,5 @@
+files/cache/
+__pycache__/
+venv/
+.venv/
+.claude/
