@@ -1,4 +1,0 @@
-TODO:
-    lilla overlay på foil
-    legge til antall kort jeg eier av samme type i collection
-    fikse layout for hvilke printings jeg eier i availibility
