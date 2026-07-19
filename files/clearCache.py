@@ -18,7 +18,7 @@ def clear_decks():
         return
     # Deck-list files at top level
     for filename in os.listdir(CACHE_DIR):
-        if filename.startswith("decks_") and filename.endswith(".json"):
+        if (filename.startswith("decks_") or filename.startswith("deck_")) and filename.endswith(".json"):
             os.remove(os.path.join(CACHE_DIR, filename))
     # Per-deck folder
     if DECKS_DIR.exists():
