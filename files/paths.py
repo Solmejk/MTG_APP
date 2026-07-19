@@ -18,16 +18,21 @@ SESSION_PATH = CACHE_DIR / "session.json"
 
 
 def user_cache_path(username: str) -> Path:
+    """Path to a user's cached profile JSON."""
     return CACHE_DIR / f"user_{username}.json"
 
 
 def collection_cache_path(collection_id: str) -> Path:
+    """Path to a cached collection's JSON."""
     return CACHE_DIR / f"collection_{collection_id}.json"
 
 
 def decks_list_cache_path(username: str) -> Path:
+    """Path to a user's cached deck list JSON (id/name pairs only —
+    individual deck contents live under DECKS_DIR, see deck_cache_path)."""
     return CACHE_DIR / f"decks_{username}.json"
 
 
 def deck_cache_path(deck_id: str) -> Path:
+    """Path to one deck's cached contents JSON."""
     return DECKS_DIR / f"{deck_id}.json"

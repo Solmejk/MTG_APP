@@ -1,3 +1,8 @@
+"""Standalone (unfinished) tool: lays out card proxy images into a
+printable .docx grid. Not wired into the main app — `load_images` and
+the input/output entry widgets it depends on are still TODO.
+"""
+
 from docx import Document
 from docx.shared import Mm, Pt
 from pathlib import Path
@@ -6,13 +11,19 @@ from io import BytesIO
 import json
 
 class ProxyPrinter:
+    """Builds a printable Word document from a folder of card images."""
+
     def __init__(self):
+        """Loads persisted input/output folder settings from
+        tokenprinter_settings.json (falls back to blank defaults)."""
         self.settings_file = "tokenprinter_settings.json"
         self.load_settings()
         self.input_folder = self.settings.get("default_input", "")
         self.output_folder = self.settings.get("default_output", "")
-    
+
     def load_settings(self):
+        """Reads self.settings from tokenprinter_settings.json, or
+        resets to blank defaults if the file is missing/invalid."""
         try:
             if Path(self.settings_file).exists():
                 with open(self.settings_file, 'r') as f:
@@ -29,22 +40,26 @@ class ProxyPrinter:
             }
     
     def save_settings(self):
+        """Writes self.settings to tokenprinter_settings.json."""
         try:
             with open(self.settings_file, 'w') as f:
                 json.dump(self.settings, f, indent=4)
         except Exception as e:
             print("ERROR: Could not save settings")
-    
+
     def load_images():
-        # TODO
+        # TODO: list image file paths from self.input_folder
         images = []
         return images
-    
+
     def create_printable_document(self):
+        """Lays out images (2 per row, rotated 90°) into a Word doc and
+        saves it to self.output_folder. TODO: filename/input/output
+        widgets referenced here aren't implemented yet."""
         filename = "TODO"
         self.input_folder = self.input_entry.get()
         self.output_folder = self.output_entry.get()
-    
+
         images = self.load_images()
         
         doc = Document()

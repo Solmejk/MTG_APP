@@ -28,11 +28,17 @@ class _RateLimiter:
     """
 
     def __init__(self, max_per_second: float):
+        """max_per_second: the shared rate ceiling every wait() call
+        collectively enforces, regardless of how many threads call it."""
         self._interval = 1.0 / max_per_second
         self._lock = threading.Lock()
         self._next_slot = 0.0
 
     def wait(self):
+        """Blocks the calling thread just long enough that this call's
+        request, plus every other thread's concurrent calls, land no
+        faster than max_per_second combined. Call immediately before
+        each outbound request."""
         with self._lock:
             now = time.monotonic()
             start = max(now, self._next_slot)
@@ -47,6 +53,8 @@ BATCH_SIZE = 15  # names per Scryfall query, combined with "or" — see cheapest
 
 
 def image_url(scryfall_id: str) -> str:
+    """Builds the cards.scryfall.io image URL for a card's Scryfall ID.
+    Returns "" if scryfall_id is falsy (some cached card data lacks one)."""
     if not scryfall_id:
         return ""
     return f"{BASE_IMAGE_URL}/{scryfall_id[0]}/{scryfall_id[1]}/{scryfall_id}.jpg"
@@ -58,10 +66,18 @@ def card_key(card: dict) -> str:
 
 
 def card_image_cache_name(card: dict) -> str:
+    """The on-disk cache filename (without extension) for a card's image,
+    via image_cache.get_image_path()."""
     return f"card_{card_key(card)}"
 
 
 def _search_prints(query: str) -> list[dict]:
+    """Runs one rate-limited Scryfall card-search query, sorted by EUR
+    price ascending. query: a full Scryfall search query string (already
+    including any name/price filters). Returns the raw list of card
+    objects from the response's "data" field, or [] on any failure
+    (network error, no results, or a 429 that didn't clear after one
+    backoff-and-retry)."""
     for attempt in range(2):  # one retry, since a burst can trip the limit even under it
         try:
             _rate_limiter.wait()

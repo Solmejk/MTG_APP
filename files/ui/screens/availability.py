@@ -1,3 +1,10 @@
+"""AvailabilityScreen: paste a Moxfield deck URL, fetch it, and cross-
+reference every card against the collection/other decks (via the root
+availability.py module) — showing what's free to use, tied up elsewhere,
+or not owned, with colored tiles, a status legend that doubles as a
+filter, a price sort, and an Export button (ui.components.export_modal).
+"""
+
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtGui import QColor, QAction, QActionGroup
 from PySide6.QtWidgets import (
@@ -7,17 +14,11 @@ from PySide6.QtWidgets import (
 
 import availability
 import moxfield
-import scryfall
 from app import MTGApp
 from models.deck import Deck
 from ui.background import run_in_background
-from ui.card_type import group_cards
-from ui.flow_layout import FlowLayout
-from ui.components.image_tile import ImageTile
+from ui.components.card_section import rebuild_card_sections, quantity_caption
 
-
-CARD_TILE_WIDTH = 140
-CARD_TILE_HEIGHT = 196
 
 STATUS_COLORS = {
     availability.FREE: QColor("#4caf50"),
@@ -48,6 +49,9 @@ class _LegendChip(QWidget):
     toggled = Signal(str, bool)  # status, is_active
 
     def __init__(self, status: str, color: QColor, label_text: str, parent=None):
+        """status: one of availability.FREE/USED/UNOWNED, identifying
+        which bucket this chip filters. color: swatch color when active.
+        label_text: text shown next to the swatch. Starts active."""
         super().__init__(parent)
         self._status = status
         self._color = color
@@ -71,6 +75,9 @@ class _LegendChip(QWidget):
         return self._active
 
     def mousePressEvent(self, event):
+        """Left-click flips the active state, updates the chip's own
+        appearance, and emits `toggled` for AvailabilityScreen to
+        re-filter the grid."""
         if event.button() == Qt.LeftButton:
             self._active = not self._active
             self._refresh_style()
@@ -78,6 +85,8 @@ class _LegendChip(QWidget):
         super().mousePressEvent(event)
 
     def _refresh_style(self):
+        """Repaints the swatch/label colors to match the current active
+        state (full color when active, dimmed gray when inactive)."""
         color = self._color if self._active else INACTIVE_COLOR
         self._swatch.setStyleSheet(f"background-color: {color.name()}; border-radius: 3px;")
         text_color = "#e8e8e8" if self._active else "#666666"
@@ -92,6 +101,10 @@ class AvailabilityScreen(QWidget):
     export_requested = Signal(list)
 
     def __init__(self, app: MTGApp):
+        """Builds the (initially empty) screen chrome — URL input, Check/
+        Sort/Export buttons, the status summary + legend-filter row, and
+        the scrollable section container. Nothing is fetched until the
+        user clicks Check."""
         super().__init__()
         self.app = app
         self._bg_tasks = []  # keeps background tasks alive — see ui/background.py
@@ -178,6 +191,9 @@ class AvailabilityScreen(QWidget):
         outer.addWidget(scroll, 1)
 
     def _build_sort_button(self) -> QToolButton:
+        """Builds the "Sort" dropdown button with its exclusive (radio-
+        button-like) menu of price-high-low/price-low-high/name options.
+        Returns the assembled button."""
         button = QToolButton()
         button.setText("Sort")
         button.setPopupMode(QToolButton.InstantPopup)
@@ -199,11 +215,18 @@ class AvailabilityScreen(QWidget):
         return button
 
     def _on_sort_changed(self, mode: str):
+        """Slot for the Sort menu: records the new mode and re-renders
+        (from cached results, no re-fetch) if there's anything to show.
+        mode: one of SORT_PRICE_DESC/SORT_PRICE_ASC/SORT_NAME."""
         self._sort_mode = mode
         if self._last_results is not None:
             self._apply_filter()
 
     def _on_legend_toggled(self, status: str, is_active: bool):
+        """Slot for a _LegendChip's `toggled` signal: updates which
+        statuses are shown and re-renders (from cached results, no
+        re-fetch). status: availability.FREE/USED/UNOWNED. is_active:
+        the chip's new state."""
         if is_active:
             self._active_statuses.add(status)
         else:
@@ -212,6 +235,9 @@ class AvailabilityScreen(QWidget):
             self._apply_filter()
 
     def _on_check_clicked(self):
+        """Slot for the Check button (and Enter in the URL box): parses
+        the URL, validates login state, then runs the fetch+check in the
+        background."""
         url = self._url_input.text().strip()
         deck_id = moxfield.extract_deck_id(url)
         if not deck_id:
@@ -231,6 +257,10 @@ class AvailabilityScreen(QWidget):
         )
 
     def _fetch_and_check(self, deck_id: str):
+        """Background-task body: force-fetches the deck at `deck_id` and
+        runs check_availability against the current collection/decks.
+        Returns (deck_name, commander_names, results) for
+        _on_check_finished."""
         deck = Deck(deck_id, "")
         deck.load(force=True)
         results = availability.check_availability(self.app, deck.cards)
@@ -238,30 +268,42 @@ class AvailabilityScreen(QWidget):
         return deck.name, commander_names, results
 
     def _on_check_finished(self, result):
+        """Background-task callback for a successful check: caches the
+        result, reveals the Export button, and renders it. result: the
+        (deck_name, commander_names, results) tuple from
+        _fetch_and_check."""
         self._check_btn.setEnabled(True)
         self._last_deck_name, self._last_commander_names, self._last_results = result
         self._export_btn.show()
         self._apply_filter()
 
     def _on_check_failed(self, message: str):
+        """Background-task callback for a failed check: surfaces the
+        error in the status line. message: str(exception) from the
+        failed fetch."""
         self._check_btn.setEnabled(True)
         self._status_label.setText(f"Couldn't load that deck: {message}")
 
     def _on_export_clicked(self):
+        """Slot for the Export button: emits export_requested with the
+        last check's full (unfiltered) results, for ExportModal to
+        display. No-ops if nothing's been checked yet."""
         if self._last_results is not None:
             self.export_requested.emit(self._last_results)
 
     def _apply_filter(self):
+        """Narrows self._last_results to the currently-active legend
+        statuses and re-renders. Called after a check completes or
+        whenever a legend chip / sort mode changes."""
         filtered = [r for r in self._last_results if r["status"] in self._active_statuses]
         self._render_results(self._last_deck_name, self._last_commander_names, filtered)
 
     def _render_results(self, deck_name: str, commander_names: set, results: list[dict]):
-        while self._sections_layout.count():
-            item = self._sections_layout.takeAt(0)
-            widget = item.widget()
-            if widget:
-                widget.deleteLater()
-
+        """Updates the summary line and rebuilds the type-grouped card
+        grid from `results` (already filtered by _apply_filter to the
+        active legend statuses). deck_name/commander_names come from the
+        last check; the summary counts always use self._last_results
+        (unfiltered) — see the comment below."""
         # Counts/cost always reflect the full check, not just what's shown
         # after filtering — "how much would it cost to finish this deck"
         # shouldn't change just because you hid the free cards.
@@ -275,51 +317,31 @@ class AvailabilityScreen(QWidget):
             f"  ·  missing cards cost ≈ €{missing_cost:,.2f}"
         )
 
-        groups = group_cards(results, commander_names)
-        for bucket_name, cards in groups.items():
-            cards = self._sorted_cards(cards)
-            total = sum(c["quantity"] for c in cards)
-            section = self._build_section(bucket_name, total, cards)
-            self._sections_layout.addWidget(section)
+        rebuild_card_sections(
+            self._sections_layout,
+            results,
+            commander_names,
+            caption_fn=self._caption_with_cost,
+            on_click=self.card_clicked.emit,
+            color_fn=lambda card: STATUS_COLORS[card["status"]],
+            sort_fn=self._sorted_cards,
+        )
+
+    @staticmethod
+    def _caption_with_cost(card: dict) -> str:
+        """Tile caption: quantity_caption() plus a "(€X.XX)" suffix when
+        this card has a nonzero missing_cost (i.e. some/all copies still
+        need buying)."""
+        caption = quantity_caption(card)
+        if card["missing_cost"] > 0:
+            caption += f" (€{card['missing_cost']:,.2f})"
+        return caption
 
     def _sorted_cards(self, cards: list[dict]) -> list[dict]:
+        """Orders one section's cards per the current Sort menu choice:
+        by missing_cost (high-low or low-high) or alphabetically by name."""
         if self._sort_mode == SORT_PRICE_DESC:
             return sorted(cards, key=lambda c: c["missing_cost"], reverse=True)
         if self._sort_mode == SORT_PRICE_ASC:
             return sorted(cards, key=lambda c: c["missing_cost"])
         return sorted(cards, key=lambda c: c["name"].lower())
-
-    def _build_section(self, name: str, count: int, cards: list[dict]) -> QWidget:
-        section = QWidget()
-        layout = QVBoxLayout(section)
-        layout.setContentsMargins(0, 0, 0, 0)
-        layout.setSpacing(10)
-
-        header_label = QLabel(f"{name} ({count})")
-        header_label.setObjectName("deckSectionHeader")
-        layout.addWidget(header_label)
-
-        grid_container = QWidget()
-        flow = FlowLayout(grid_container, margin=0, spacing=16)
-
-        for card in cards:
-            quantity = card.get("quantity", 1)
-            caption = f"{quantity}x {card['name']}" if quantity > 1 else card["name"]
-            if card["missing_cost"] > 0:
-                caption += f" (€{card['missing_cost']:,.2f})"
-            tile = ImageTile(
-                image_url=card.get("image_url", ""),
-                cache_name=scryfall.card_image_cache_name(card),
-                caption=caption,
-                payload=card,
-                width=CARD_TILE_WIDTH,
-                height=CARD_TILE_HEIGHT,
-                radius=14,
-                status_color=STATUS_COLORS[card["status"]],
-            )
-            tile.clicked.connect(self.card_clicked.emit)
-            flow.addWidget(tile)
-            tile.request_image_load()
-
-        layout.addWidget(grid_container)
-        return section

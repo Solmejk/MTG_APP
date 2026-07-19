@@ -1,3 +1,9 @@
+"""Entry point for the GUI app. Sets up crash logging, builds the
+QApplication and MainWindow, and wires up a clean-shutdown handler so
+background image/deck-load threads don't get torn down mid-flight. Run
+this file directly to launch the app.
+"""
+
 import faulthandler
 import sys
 from pathlib import Path
@@ -17,16 +23,21 @@ faulthandler.enable(file=_crash_log)
 
 
 def load_stylesheet(path: Path) -> str:
+    """Reads a .qss stylesheet file as text. path: path to the .qss file.
+    Returns its contents, ready to pass to QApplication.setStyleSheet()."""
     return path.read_text(encoding="utf-8")
 
 
 def main():
+    """Builds and runs the application: loads the last-logged-in user (if
+    any) from session.py, creates the QApplication/MainWindow, and blocks
+    until the window closes."""
     mtg_app = MTGApp(session.get_saved_username())
     # No eager deck.load() — each deck loads on demand when its detail screen opens
-    
+
     qt_app = QApplication(sys.argv)
     qt_app.setStyleSheet(load_stylesheet(STYLE_PATH))
-    
+
     window = MainWindow(mtg_app)
     window.show()
 

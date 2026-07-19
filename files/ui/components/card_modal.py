@@ -1,12 +1,18 @@
-from PySide6.QtCore import Qt, Signal
-from PySide6.QtGui import QPixmap, QPainter, QColor
-from PySide6.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QScrollArea,
-)
+"""CardModal: the full-size card popout used across the app (Collection,
+Decks/DeckDetail, and Availability screens all open the same instance via
+MainWindow.card_modal). Shows the card art plus, when the clicked card
+carries that data (only the Availability screen's results do), how many
+of each printing you own and which of your decks use it.
+"""
+
+from PySide6.QtCore import Qt
+from PySide6.QtGui import QPixmap
+from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton, QScrollArea
 
 import scryfall
 from image_cache import get_image_path
 from ui.components.image_tile import round_pixmap
+from ui.components.overlay_modal import OverlayModal
 
 
 CARD_IMG_WIDTH = 360
@@ -24,39 +30,30 @@ MODAL_MIN_HEIGHT = 650
 MODAL_MAX_HEIGHT = 850
 
 
-class CardModal(QWidget):
-    """
-    Full-window overlay showing a single card at large size with basic details.
-    Close by clicking outside, pressing Esc, or hitting the close button.
-    """
-
-    closed = Signal()
+class CardModal(OverlayModal):
+    """Popout showing one card at large size. Call show_card(card) to
+    populate and display it. See OverlayModal for dismissal/resize
+    behavior (outside-click, Esc, close button)."""
 
     def __init__(self, parent=None):
+        """Builds the (initially empty/hidden) popout chrome — image slot,
+        name/meta labels, a scrollable owned/used-in info area, and a
+        Close button. Content is filled in later by show_card()."""
         super().__init__(parent)
-        self.setAttribute(Qt.WA_StyledBackground, True)
-        self.setObjectName("cardModal")
 
-        # Outer layout fills the screen
-        outer = QVBoxLayout(self)
-        outer.setContentsMargins(0, 0, 0, 0)
-        outer.setAlignment(Qt.AlignCenter)
+        content = QWidget()
+        content.setObjectName("cardModalContent")
+        content.setFixedWidth(MODAL_CONTENT_WIDTH)
+        content.setFixedHeight(MODAL_MIN_HEIGHT)
 
-        # The actual content card — fixed width, always centered; height is
-        # set dynamically per card in _resize_to_fit()
-        self._content = QWidget()
-        self._content.setObjectName("cardModalContent")
-        self._content.setFixedWidth(MODAL_CONTENT_WIDTH)
-        self._content.setFixedHeight(MODAL_MIN_HEIGHT)
-
-        content_layout = QVBoxLayout(self._content)
+        content_layout = QVBoxLayout(content)
         content_layout.setContentsMargins(30, 30, 30, 16)
         content_layout.setSpacing(12)
 
         # Everything above Close scrolls together as one unit — image, name,
-        # meta, owned, used-in — with static spacing between them, same as
-        # before. Only kicks in if a card has enough owned-printings/used-in
-        # text to not fit the fixed popout height.
+        # meta, owned, used-in — with static spacing between them. Only
+        # kicks in if a card has enough owned-printings/used-in text to not
+        # fit the fixed popout height.
         self._scroll = QScrollArea()
         self._scroll.setObjectName("cardModalScroll")
         self._scroll.setWidgetResizable(True)
@@ -111,11 +108,17 @@ class CardModal(QWidget):
         self._close_btn.clicked.connect(self._dismiss)
         content_layout.addWidget(self._close_btn, alignment=Qt.AlignCenter)
 
-        outer.addWidget(self._content)
-
-        self.hide()
+        self._init_overlay(content)
 
     def show_card(self, card: dict):
+        """Populates the popout for `card` and displays it.
+
+        card: a flat dict with at least name/set/cn/price/image_url — the
+        shape produced by Collection/Deck/Availability screens for their
+        clicked-card payloads. If it also carries owned_printings/
+        used_in_decks (only Availability results do), those sections show;
+        otherwise they're hidden.
+        """
         # Load the image (we have it cached already)
         image_url = card.get("image_url", "")
         if image_url:
@@ -158,17 +161,13 @@ class CardModal(QWidget):
             self._used_in_label.hide()
 
         self._resize_to_fit()
-
-        # Cover the full parent
-        if self.parent():
-            self.resize(self.parent().size())
-        self.raise_()
-        self.show()
+        self._show_overlay()
 
     def _resize_to_fit(self):
-        """Size the popout to fit this card's actual content, between
-        MODAL_MIN_HEIGHT and MODAL_MAX_HEIGHT — small by default, growing
-        only as far as needed. Content beyond the max still scrolls."""
+        """Sets the popout's height to fit this card's actual content,
+        clamped between MODAL_MIN_HEIGHT and MODAL_MAX_HEIGHT — small by
+        default, growing only as far as needed. Content beyond the max
+        still scrolls (see the scroll area in __init__)."""
         self._inner.adjustSize()
         content_layout = self._content.layout()
         margins = content_layout.contentsMargins()
@@ -180,24 +179,3 @@ class CardModal(QWidget):
         desired = self._inner.sizeHint().height() + chrome
         height = max(MODAL_MIN_HEIGHT, min(MODAL_MAX_HEIGHT, desired))
         self._content.setFixedHeight(height)
-
-    def _dismiss(self):
-        self.hide()
-        self.closed.emit()
-
-    def mousePressEvent(self, event):
-        """Clicking outside the content card closes the modal."""
-        # If the click was inside the content widget, ignore it (don't close)
-        click_pos = event.position().toPoint()
-        if not self._content.geometry().contains(click_pos):
-            self._dismiss()
-        super().mousePressEvent(event)
-
-    def keyPressEvent(self, event):
-        if event.key() == Qt.Key_Escape:
-            self._dismiss()
-        super().keyPressEvent(event)
-
-    def resizeEvent(self, event):
-        """When the window resizes, the modal should follow."""
-        super().resizeEvent(event)

@@ -1,3 +1,9 @@
+"""Deck: one Moxfield deck's cards, commanders, and metadata, plus its
+local active/archived flag (persisted separately — see deck_state.py).
+Used both for the current user's own decks and for ad-hoc decks fetched
+by URL (the Availability screen's "checked" deck).
+"""
+
 import requests
 import cache_io
 import moxfield
@@ -7,6 +13,10 @@ from models.deck_state import is_active, set_active
 
 class Deck:
     def __init__(self, deck_id, name):
+        """deck_id: the Moxfield public ID. name: display name — used as
+        a placeholder until load() overwrites it with Moxfield's own name
+        (callers that only have an ID, like the availability check, pass
+        ""). Starts with no cards — call load() to populate."""
         self._deck_id = deck_id
         self._name = name
         self._cards = []
@@ -19,6 +29,7 @@ class Deck:
 
     @property
     def cards(self):
+        """Trimmed card dicts: name/set/cn/quantity/price/image_url/type_line."""
         return self._cards
 
     @property
@@ -43,6 +54,8 @@ class Deck:
 
     @property
     def commanders(self):
+        """Subset of `cards` that are commanders (also present in the
+        main `cards` list, not a separate pool)."""
         return self._commanders
 
     @property
@@ -51,13 +64,23 @@ class Deck:
 
     @property
     def active(self):
+        """Whether this deck counts as "in use" for availability
+        checks — archived decks don't tie up their cards. Persisted via
+        deck_state.py, keyed by deck_id."""
         return self._active
 
     def set_active(self, value: bool):
+        """Updates the active/archived flag, in memory and on disk
+        (deck_state.py). value: the new active state."""
         self._active = value
         set_active(self._deck_id, value)
 
     def load(self, force=False):
+        """Populates name/format/commanders/cards/total_cards/author/value.
+        force: False reads the cached decks/<id>.json if present (leaves
+        the deck empty if not cached yet); True fetches the full decklist
+        from Moxfield, trims it down (_trim_raw_deck), and overwrites the
+        cache."""
         path = paths.deck_cache_path(self._deck_id)
 
         if not force:
@@ -80,6 +103,11 @@ class Deck:
 
     @staticmethod
     def _trim_raw_deck(raw: dict) -> dict:
+        """Reduces Moxfield's full deck API response down to just what
+        the app uses. raw: the parsed JSON from the deck-all endpoint
+        (mainboard/commanders boards only — sideboard/maybeboard/etc. are
+        ignored). Returns a dict with name/format/commanders/cards/
+        total_cards/author/value, ready for cache_io.write_json()."""
         cards = []
         commanders = []
         total_value = 0

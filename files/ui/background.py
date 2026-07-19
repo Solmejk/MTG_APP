@@ -1,7 +1,15 @@
+"""Generic "run this on a worker thread" helper (run_in_background), used
+by every screen/window that does a blocking Moxfield/Scryfall call
+without freezing the UI. See BackgroundTask's docstring for the
+autoDelete/use-after-free pitfall this exists to avoid.
+"""
+
 from PySide6.QtCore import QObject, QRunnable, QThreadPool, Signal, Slot
 
 
 class _WorkerSignals(QObject):
+    """Signals can only live on QObject, not QRunnable — BackgroundTask
+    owns one of these to report back to the main thread."""
     finished = Signal(object)  # result of fn()
     failed = Signal(str)
 
@@ -17,6 +25,7 @@ class BackgroundTask(QRunnable):
     """
 
     def __init__(self, fn):
+        """fn: a zero-argument callable to run on the worker thread."""
         super().__init__()
         self.fn = fn
         self.signals = _WorkerSignals()
@@ -24,6 +33,8 @@ class BackgroundTask(QRunnable):
 
     @Slot()
     def run(self):
+        """Entry point QThreadPool calls on the worker thread: runs fn()
+        and emits finished(result) or failed(str(exception))."""
         try:
             result = self.fn()
         except Exception as e:

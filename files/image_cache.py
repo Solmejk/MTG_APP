@@ -1,3 +1,8 @@
+"""Generic on-disk image cache, keyed by an arbitrary caller-supplied
+name (card printings, deck commander art, user profile pictures — see
+scryfall.card_image_cache_name for the card-specific naming scheme).
+"""
+
 from pathlib import Path
 import requests
 

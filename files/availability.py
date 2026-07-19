@@ -16,6 +16,8 @@ BASIC_LAND_NAMES = {"plains", "island", "swamp", "mountain", "forest", "wastes"}
 
 
 def count_in_collection(collection, card_name: str) -> int:
+    """Total copies of `card_name` owned, summed across every printing in
+    `collection` (a models.collection.Collection)."""
     target = card_name.lower()
     return sum(
         entry["quantity"] for entry in collection.cards
@@ -24,6 +26,8 @@ def count_in_collection(collection, card_name: str) -> int:
 
 
 def count_in_other_decks(decks, card_name: str) -> int:
+    """Total copies of `card_name` tied up across every active deck in
+    `decks` (a list of models.deck.Deck) — archived decks don't count."""
     target = card_name.lower()
     total = 0
     for deck in decks:

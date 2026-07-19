@@ -1,3 +1,10 @@
+"""Shared pixmap helpers (round_pixmap, make_placeholder,
+paint_tint_overlay) plus ImageTile: the clickable image+caption widget
+used for deck tiles, deck-detail card tiles, and availability-check card
+tiles. CardGridView (the Collection screen's virtualized grid) uses the
+pixmap helpers directly rather than ImageTile itself, for performance.
+"""
+
 from PySide6.QtCore import Qt, Signal, QRectF
 from PySide6.QtGui import QPixmap, QPainter, QPainterPath, QColor, QImage
 from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel
@@ -25,22 +32,43 @@ def round_pixmap(pixmap: QPixmap, radius: int) -> QPixmap:
 
 
 def make_placeholder(width: int, height: int, radius: int) -> QPixmap:
+    """Builds a plain dark rounded-rect pixmap shown before a card image
+    has loaded (or if it fails to load)."""
     pixmap = QPixmap(width, height)
     pixmap.fill(Qt.transparent)
-    
+
     painter = QPainter(pixmap)
     painter.setRenderHint(QPainter.Antialiasing)
     painter.setBrush(QColor("#2a2a2a"))
     painter.setPen(Qt.NoPen)
     painter.drawRoundedRect(QRectF(0, 0, width, height), radius, radius)
     painter.end()
-    
+
     return pixmap
 
 
+def paint_tint_overlay(painter: QPainter, rect: QRectF, radius: float, color: QColor):
+    """Draws a translucent rounded-rect wash over `rect` onto an
+    already-open `painter` — the status-color overlay in the availability
+    grid and the foil overlay in the collection grid both use this.
+    `color`'s alpha controls how strong the wash is. `radius` should match
+    the underlying image's own corner radius so the tint doesn't spill
+    past its rounded corners."""
+    painter.save()
+    painter.setRenderHint(QPainter.Antialiasing)
+    painter.setPen(Qt.NoPen)
+    painter.setBrush(color)
+    painter.drawRoundedRect(rect, radius, radius)
+    painter.restore()
+
+
 class ClickableLabel(QLabel):
+    """A QLabel that emits `clicked` on left-click — used wherever a plain
+    label (image, caption, sidebar avatar/username) needs to act as a
+    button."""
+
     clicked = Signal()
-    
+
     def mousePressEvent(self, event):
         if event.button() == Qt.LeftButton:
             self.clicked.emit()
@@ -66,6 +94,15 @@ class ImageTile(QWidget):
         radius: int = 12,
         status_color: QColor | None = None,
     ):
+        """image_url: image to fetch (request_image_load() kicks this
+        off — not automatic, since callers may want to defer loading
+        offscreen tiles). cache_name: on-disk cache key for the image.
+        caption: text shown below the image. payload: arbitrary value
+        passed back on `clicked` (typically the card/deck dict this tile
+        represents). width/height/radius: tile image size and corner
+        rounding. status_color: optional translucent tint + matching
+        hover-border color (used by the availability screen; omit for a
+        plain tile)."""
         super().__init__()
         self.payload = payload
         self._image_url = image_url
@@ -109,17 +146,16 @@ class ImageTile(QWidget):
         layout.addWidget(caption_label)
 
     def _tinted(self, pixmap: QPixmap) -> QPixmap:
-        """Apply the status color as a translucent wash. Uses SourceAtop so
-        it only paints where the pixmap already has content — respects the
-        rounded corners on both the placeholder and loaded card images."""
+        """Apply the status color as a translucent wash, matching the
+        pixmap's own corner radius (it's always exactly self._radius,
+        whether it's the placeholder or a loaded card image)."""
         if self._status_color is None:
             return pixmap
         result = QPixmap(pixmap)
         painter = QPainter(result)
-        painter.setCompositionMode(QPainter.CompositionMode_SourceAtop)
         color = QColor(self._status_color)
         color.setAlpha(90)
-        painter.fillRect(result.rect(), color)
+        paint_tint_overlay(painter, QRectF(0, 0, result.width(), result.height()), self._radius, color)
         painter.end()
         return result
 
@@ -140,6 +176,10 @@ class ImageTile(QWidget):
         )
     
     def _on_image_ready(self, token, image: QImage):
+        """ImageLoader callback (main thread) for a successful fetch.
+        token: echoed back from submit() — id(self), checked to ignore
+        stray results after the tile's been reused/destroyed. image: the
+        decoded, scaled, rounded QImage."""
         if token != id(self):
             return  # signal not for us
         if not self._image_label:
@@ -148,12 +188,14 @@ class ImageTile(QWidget):
         pixmap = QPixmap.fromImage(image)
         self._image_label.setPixmap(self._tinted(pixmap))
         self._loaded = True
-    
+
     def _on_image_failed(self, token):
+        """ImageLoader callback (main thread) for a failed fetch — resets
+        _requested so a later request_image_load() call can retry."""
         if token != id(self):
             return
         self._requested = False  # allow retry later
-    
+
     # Backward-compat: old call sites may still use load_image()
     def load_image(self):
         self.request_image_load()

@@ -1,3 +1,10 @@
+"""Standalone CLI script: checks a pasted Moxfield plain-text decklist
+against a user's collection + active decks and prints/saves an
+availability report. Superseded in the app itself by
+ui/screens/availability.py + the root-level availability.py module, but
+kept as a quick command-line alternative.
+"""
+
 import json
 import re
 import sys
@@ -36,6 +43,9 @@ def count_in_collection(collection, card_name):
     return total
 
 def find_in_decks(decks, card_name):
+    """Sum quantities of a card across all active decks (name match,
+    case-insensitive). Returns (total, used_in) where used_in is a list
+    of {"name", "quantity"} dicts for decks that use the card."""
     target = card_name.lower()
     total = 0
     used_in = []
@@ -95,6 +105,8 @@ def check_availability(app, deck_text):
     return results
 
 def print_report(results):
+    """Prints one line per result (flag, name, need/own/used/available)
+    plus an indented sub-line for each deck it's used in."""
     for r in results:
         print(f"[{r['flag']:8}] {r['name']:35} "
               f"need {r['needed']}  own {r['owned']}  "
@@ -104,15 +116,17 @@ def print_report(results):
 
 
 def save_results(results, path="files/availability_report.json"):
+    """Writes `results` (as returned by check_availability) to a JSON file."""
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=2)
 
 if __name__ == "__main__":
     app = MTGApp("Solmejk")
-    
+
     # Make sure every deck has its cards loaded (uses cache)
     for deck in app.decks:
         deck.load()
-    
+
+    deck_text = sys.stdin.read()
     results = check_availability(app, deck_text)
     print_report(results)

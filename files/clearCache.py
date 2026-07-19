@@ -1,3 +1,8 @@
+"""Clears cached data by category (collection/decks/profile/images).
+Used both by the Settings screen's "Clear cache" checkboxes and as a
+standalone CLI: `python clearCache.py [collection|decks|profile|images|all]`.
+"""
+
 import os
 import shutil
 
@@ -5,6 +10,7 @@ from paths import CACHE_DIR, DECKS_DIR, IMAGES_DIR
 
 
 def clear_collection():
+    """Deletes every cached collection_*.json file."""
     if not os.path.exists(CACHE_DIR):
         return
     for filename in os.listdir(CACHE_DIR):
@@ -14,6 +20,9 @@ def clear_collection():
 
 
 def clear_decks():
+    """Deletes the cached deck list(s) (decks_*.json), any leftover
+    single-deck cache files (deck_*.json), and the whole per-deck content
+    folder (DECKS_DIR)."""
     if not os.path.exists(CACHE_DIR):
         return
     # Deck-list files at top level
@@ -27,6 +36,9 @@ def clear_decks():
 
 
 def clear_profile():
+    """Deletes every cached user_*.json profile file. Note: this does not
+    forget which username is logged in — that's session.py's job, handled
+    separately by MainWindow._clear_cache when "profile" is cleared."""
     if not os.path.exists(CACHE_DIR):
         return
     for filename in os.listdir(CACHE_DIR):
@@ -36,12 +48,15 @@ def clear_profile():
 
 
 def clear_images():
+    """Deletes the entire cached-images folder (card art, commander art,
+    profile pictures)."""
     if IMAGES_DIR.exists():
         shutil.rmtree(IMAGES_DIR)
     print("Cleared image cache.")
 
 
 def clear_all():
+    """Clears every cache category."""
     clear_collection()
     clear_decks()
     clear_profile()
@@ -53,7 +68,7 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python clearCache.py [collection|decks|profile|images|all]")
         sys.exit(1)
-    
+
     target = sys.argv[1].lower()
     if target == "collection":
         clear_collection()

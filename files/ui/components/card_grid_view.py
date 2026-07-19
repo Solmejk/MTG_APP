@@ -1,3 +1,10 @@
+"""CardGridView: the Collection screen's card grid. Unlike the tile-based
+grids elsewhere (Decks, DeckDetail, Availability — see ImageTile), this
+one is a virtualized QListView + custom delegate, since a full collection
+can be thousands of cards and building a real widget per card would be
+far too slow/memory-heavy.
+"""
+
 from PySide6.QtCore import (
     Qt, QAbstractListModel, QModelIndex, QSize, QRect, QRectF, Signal,
 )
@@ -10,7 +17,7 @@ from PySide6.QtWidgets import (
 
 import scryfall
 from ui.image_loader import ImageLoader
-from ui.components.image_tile import make_placeholder
+from ui.components.image_tile import make_placeholder, paint_tint_overlay
 
 
 CELL_WIDTH = 140
@@ -19,22 +26,31 @@ IMAGE_HEIGHT = 196
 IMAGE_RADIUS = 12
 CAPTION_HEIGHT = 36
 
+FOIL_COLOR = QColor("#9b59b6")
+FOIL_ALPHA = 30  # very slight — high transparency
+
 
 class CollectionModel(QAbstractListModel):
     """Wraps a list of card entries with optional name filtering."""
     
     def __init__(self, cards: list, parent=None):
+        """cards: raw Moxfield collection entries (list of {"quantity":
+        int, "card": {...}, ...})."""
         super().__init__(parent)
         self._all_cards = cards
         self._filtered = cards
         self._filter = ""
-    
+
     def rowCount(self, parent=QModelIndex()):
+        """Qt model API: number of rows currently shown (post-filter)."""
         if parent.isValid():
             return 0
         return len(self._filtered)
-    
+
     def data(self, index: QModelIndex, role: int = Qt.DisplayRole):
+        """Qt model API: Qt.UserRole returns the full entry dict (what
+        the delegate paints from); Qt.DisplayRole returns just the card
+        name (used for accessibility/sorting, not painted directly)."""
         if not index.isValid() or index.row() >= len(self._filtered):
             return None
         entry = self._filtered[index.row()]
@@ -44,8 +60,11 @@ class CollectionModel(QAbstractListModel):
         if role == Qt.DisplayRole:
             return entry["card"]["name"]
         return None
-    
+
     def setFilter(self, query: str):
+        """Narrows the visible rows to cards whose name contains `query`
+        (case-insensitive); an empty query shows everything. No-ops if
+        `query` matches the current filter."""
         query = query.strip().lower()
         if query == self._filter:
             return
@@ -81,6 +100,10 @@ class CardThumbnailDelegate(QStyledItemDelegate):
         return QSize(CELL_WIDTH, CELL_HEIGHT)
 
     def paint(self, painter: QPainter, option: QStyleOptionViewItem, index: QModelIndex):
+        """Qt delegate API: paints one cell — the (possibly still-loading
+        placeholder) image, a foil tint if applicable, a hover border,
+        and the elided card-name caption. Also lazily kicks off an
+        ImageLoader fetch the first time a given card's image is needed."""
         entry = index.data(Qt.UserRole)
         if entry is None:
             return
@@ -98,7 +121,15 @@ class CardThumbnailDelegate(QStyledItemDelegate):
         # Center horizontally if narrower than cell
         x = img_x + (CELL_WIDTH - pixmap.width()) // 2
         painter.drawPixmap(x, img_y, pixmap)
-        
+
+        # Foil tint — a very slight translucent wash, rounded to match the image
+        if entry.get("isFoil"):
+            color = QColor(FOIL_COLOR)
+            color.setAlpha(FOIL_ALPHA)
+            paint_tint_overlay(
+                painter, QRectF(x, img_y, pixmap.width(), pixmap.height()), IMAGE_RADIUS, color,
+            )
+
         # Hover border around image
         if option.state & QStyle.State_MouseOver:
             painter.save()
@@ -146,6 +177,9 @@ class CardThumbnailDelegate(QStyledItemDelegate):
                 )
     
     def _on_image_ready(self, packed_token, image: QImage):
+        """ImageLoader callback (main thread): caches the decoded image
+        and repaints just the affected row. packed_token: (card_token,
+        row) as passed to ImageLoader.submit()."""
         token, row = packed_token
         self._pixmap_cache[token] = QPixmap.fromImage(image)
         # Tell the view to repaint just this row
@@ -159,8 +193,8 @@ class CardThumbnailDelegate(QStyledItemDelegate):
 class CardGridView(QListView):
     """Virtualized icon-grid view backed by a CollectionModel."""
     
-    card_clicked = Signal(dict)
-    
+    card_clicked = Signal(dict)  # emitted with a flat card payload dict on click
+
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setViewMode(QListView.IconMode)
@@ -170,27 +204,35 @@ class CardGridView(QListView):
         self.setSpacing(8)
         self.setSelectionMode(QListView.NoSelection)
         self.setMouseTracking(True)  # needed for State_MouseOver
-        
+
         self._delegate = CardThumbnailDelegate(self)
         self._delegate.attach_view(self)
         self.setItemDelegate(self._delegate)
-        
+
         self.clicked.connect(self._on_clicked)
-    
+
     def setCardData(self, cards: list):
+        """(Re)populates the grid. cards: raw Moxfield collection entries
+        (see CollectionModel)."""
         model = CollectionModel(cards, self)
         self.setModel(model)
-    
+
     def setFilter(self, query: str):
+        """Narrows the grid to cards matching `query` — see
+        CollectionModel.setFilter."""
         model = self.model()
         if isinstance(model, CollectionModel):
             model.setFilter(query)
-    
+
     def filtered_count(self) -> int:
+        """Number of cards currently visible (post-filter)."""
         model = self.model()
         return model.rowCount() if model else 0
     
     def _on_clicked(self, index: QModelIndex):
+        """Qt view signal handler: reshapes the raw collection entry at
+        `index` into the flat dict CardModal.show_card expects, and
+        emits card_clicked."""
         entry = index.data(Qt.UserRole)
         if entry is None:
             return

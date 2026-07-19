@@ -14,6 +14,9 @@ def read_json(path: Path):
 
 
 def write_json(path: Path, data, indent=None):
+    """Writes `data` as JSON to `path`, creating parent directories as
+    needed. indent: passed straight through to json.dump (None for
+    compact output, an int for pretty-printed)."""
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=indent)

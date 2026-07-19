@@ -24,16 +24,21 @@ def extract_deck_id(url: str) -> str | None:
 
 
 def user_api_url(username: str) -> str:
+    """Endpoint for fetching a user's profile (avatar, collection ID)."""
     return f"{API_BASE}/v1/users/{username}"
 
 
 def decks_search_api_url() -> str:
+    """Endpoint for searching/listing a user's decks. Query params
+    (author, sort, etc.) are added by the caller — see User.load_decks."""
     return f"{API_BASE}/v2/decks/search"
 
 
 def collection_search_api_url(collection_id: str) -> str:
+    """Endpoint for fetching a collection's full card list."""
     return f"{API_BASE}/v1/collections/search/{collection_id}"
 
 
 def deck_api_url(deck_id: str) -> str:
+    """Endpoint for fetching one deck's full contents."""
     return f"{API_BASE}/v3/decks/all/{deck_id}"
