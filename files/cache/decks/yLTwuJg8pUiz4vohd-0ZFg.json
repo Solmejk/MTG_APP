@@ -1,0 +1,398 @@
+{
+  "name": "Galadriel of Lothl\u00f3rien",
+  "format": "commander",
+  "commanders": [
+    {
+      "name": "Galadriel of Lothl\u00f3rien",
+      "set": "ltr",
+      "cn": "813",
+      "quantity": 1,
+      "price": 0,
+      "image_url": "https://cards.scryfall.io/normal/front/4/0/404dcf45-d44b-4e1d-9886-0d1d144a9c8a.jpg",
+      "type_line": "Legendary Creature \u2014 Elf Noble"
+    }
+  ],
+  "cards": [
+    {
+      "name": "Island",
+      "set": "dmu",
+      "cn": "267",
+      "quantity": 18,
+      "price": 0.02,
+      "image_url": "https://cards.scryfall.io/normal/front/6/4/64e7580a-92bd-4b50-84fc-ee42e47c9014.jpg",
+      "type_line": "Basic Land \u2014 Island"
+    },
+    {
+      "name": "Forest",
+      "set": "mkm",
+      "cn": "286",
+      "quantity": 18,
+      "price": 0.08,
+      "image_url": "https://cards.scryfall.io/normal/front/6/c/6cb8f264-cc26-476e-a3b7-53638dce7395.jpg",
+      "type_line": "Basic Land \u2014 Forest"
+    },
+    {
+      "name": "Arcane Signet",
+      "set": "mic",
+      "cn": "157",
+      "quantity": 1,
+      "price": 0.48,
+      "image_url": "https://cards.scryfall.io/normal/front/9/9/993dfead-1c44-47a7-bd37-f57e47bc1203.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Command Tower",
+      "set": "mkc",
+      "cn": "256",
+      "quantity": 1,
+      "price": 0.22,
+      "image_url": "https://cards.scryfall.io/normal/front/9/6/96c3244e-930f-498c-959e-0f000151597d.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Courser of Kruphix",
+      "set": "cmm",
+      "cn": "888",
+      "quantity": 1,
+      "price": 1.51,
+      "image_url": "https://cards.scryfall.io/normal/front/d/c/dc63d2ea-a980-466e-9ebb-f28008f84c3d.jpg",
+      "type_line": "Enchantment Creature \u2014 Centaur"
+    },
+    {
+      "name": "Sol Ring",
+      "set": "mic",
+      "cn": "162",
+      "quantity": 1,
+      "price": 1.01,
+      "image_url": "https://cards.scryfall.io/normal/front/c/4/c46138f0-224a-4ca9-bf03-badb2ae5ee21.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Tatyova, Benthic Druid",
+      "set": "fdn",
+      "cn": "247",
+      "quantity": 1,
+      "price": 0.12,
+      "image_url": "https://cards.scryfall.io/normal/front/e/a/eabc978a-0666-472d-bdc6-d4b29d29eca4.jpg",
+      "type_line": "Legendary Creature \u2014 Merfolk Druid"
+    },
+    {
+      "name": "Zendikar's Roil",
+      "set": "jmp",
+      "cn": "448",
+      "quantity": 1,
+      "price": 0.98,
+      "image_url": "https://cards.scryfall.io/normal/front/1/8/180aa3d6-8475-4c98-a140-af736a9c135e.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Heroic Intervention",
+      "set": "mar",
+      "cn": "80",
+      "quantity": 1,
+      "price": 5.64,
+      "image_url": "https://cards.scryfall.io/normal/front/4/2/4208a5fd-4ca9-4648-883e-5dfe02746e68.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Thassa, God of the Sea",
+      "set": "lcc",
+      "cn": "176",
+      "quantity": 1,
+      "price": 3.46,
+      "image_url": "https://cards.scryfall.io/normal/front/9/f/9f9db424-e668-48b4-b275-7b35be4e1bf8.jpg",
+      "type_line": "Legendary Enchantment Creature \u2014 God"
+    },
+    {
+      "name": "Season of Growth",
+      "set": "m20",
+      "cn": "191",
+      "quantity": 1,
+      "price": 0.33,
+      "image_url": "https://cards.scryfall.io/normal/front/6/5/65b9a718-01b9-46b2-85eb-55f6206ee5e4.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Simic Signet",
+      "set": "c16",
+      "cn": "270",
+      "quantity": 1,
+      "price": 0.23,
+      "image_url": "https://cards.scryfall.io/normal/front/6/2/62bc39de-573d-4857-a3cc-66fd13095128.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Overwhelming Stampede",
+      "set": "msc",
+      "cn": "178",
+      "quantity": 1,
+      "price": 1.26,
+      "image_url": "https://cards.scryfall.io/normal/front/6/9/6996b9c4-e78c-4970-91c7-9025a0a4f670.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Rampaging Baloths",
+      "set": "blc",
+      "cn": "233",
+      "quantity": 1,
+      "price": 0.31,
+      "image_url": "https://cards.scryfall.io/normal/front/e/7/e738d6f6-2da1-4c53-b32f-65e8a1f806a2.jpg",
+      "type_line": "Creature \u2014 Beast"
+    },
+    {
+      "name": "Avenger of Zendikar",
+      "set": "tdc",
+      "cn": "247",
+      "quantity": 1,
+      "price": 0.69,
+      "image_url": "https://cards.scryfall.io/normal/front/0/4/047e6ce0-b38b-467e-8bc5-102c71054bae.jpg",
+      "type_line": "Creature \u2014 Elemental"
+    },
+    {
+      "name": "Eyes Everywhere",
+      "set": "rna",
+      "cn": "38",
+      "quantity": 1,
+      "price": 0.05,
+      "image_url": "https://cards.scryfall.io/normal/front/1/f/1fdbf073-3ee6-402b-bd40-4781f40a6cae.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Lifecrafter's Bestiary",
+      "set": "lcc",
+      "cn": "307",
+      "quantity": 1,
+      "price": 0.39,
+      "image_url": "https://cards.scryfall.io/normal/front/b/6/b6623cb1-15e4-47b3-8460-dfeb5fb2cd09.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Retreat to Coralhelm",
+      "set": "bfz",
+      "cn": "82",
+      "quantity": 1,
+      "price": 0.51,
+      "image_url": "https://cards.scryfall.io/normal/front/6/8/68684c8e-dc19-4a56-b511-4e21140b137f.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Genesis Hydra",
+      "set": "ima",
+      "cn": "163",
+      "quantity": 1,
+      "price": 0.24,
+      "image_url": "https://cards.scryfall.io/normal/front/4/9/49f0118e-4449-4394-b4c1-5b4f83d7bc4a.jpg",
+      "type_line": "Creature \u2014 Plant Hydra"
+    },
+    {
+      "name": "Genesis Wave",
+      "set": "ltc",
+      "cn": "245",
+      "quantity": 1,
+      "price": 0.42,
+      "image_url": "https://cards.scryfall.io/normal/front/5/4/546c3b8d-6218-4786-bf16-22c6d3718361.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Talisman of Curiosity",
+      "set": "m3c",
+      "cn": "309",
+      "quantity": 1,
+      "price": 0.35,
+      "image_url": "https://cards.scryfall.io/normal/front/0/0/00413cf3-bc14-4881-8feb-829f11af0fdd.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Ezuri's Predation",
+      "set": "c15",
+      "cn": "36",
+      "quantity": 1,
+      "price": 1.69,
+      "image_url": "https://cards.scryfall.io/normal/front/4/d/4d9b4ad1-3d5c-43b6-9284-9ec427936dd2.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Sporemound",
+      "set": "jmp",
+      "cn": "433",
+      "quantity": 1,
+      "price": 0.17,
+      "image_url": "https://cards.scryfall.io/normal/front/f/2/f2799310-c77a-47b2-b1a5-50c029600020.jpg",
+      "type_line": "Creature \u2014 Fungus"
+    },
+    {
+      "name": "Hinterland Harbor",
+      "set": "tdc",
+      "cn": "371",
+      "quantity": 1,
+      "price": 0.42,
+      "image_url": "https://cards.scryfall.io/normal/front/3/e/3eb512f5-9782-4c49-9b6e-4e967e42408b.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Sylvan Awakening",
+      "set": "dom",
+      "cn": "183",
+      "quantity": 1,
+      "price": 0.89,
+      "image_url": "https://cards.scryfall.io/normal/front/9/3/93ac4d3d-064e-459d-b3a4-6c0872a2da8c.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Scute Swarm",
+      "set": "pznr",
+      "cn": "203p",
+      "quantity": 1,
+      "price": 5.44,
+      "image_url": "https://cards.scryfall.io/normal/front/2/a/2ac27853-fe5a-4402-9872-1fc98d083277.jpg",
+      "type_line": "Creature \u2014 Insect"
+    },
+    {
+      "name": "Aesi, Tyrant of Gyre Strait",
+      "set": "dsc",
+      "cn": "210",
+      "quantity": 1,
+      "price": 13.54,
+      "image_url": "https://cards.scryfall.io/normal/front/6/7/673c21f8-02b6-4ac4-b2fc-df065b4ac662.jpg",
+      "type_line": "Legendary Creature \u2014 Serpent"
+    },
+    {
+      "name": "In Search of Greatness",
+      "set": "pkhm",
+      "cn": "177p",
+      "quantity": 1,
+      "price": 0.4,
+      "image_url": "https://cards.scryfall.io/normal/front/2/1/21837093-1dba-4c3e-8782-f9e77d10a773.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Vineglimmer Snarl",
+      "set": "who",
+      "cn": "329",
+      "quantity": 1,
+      "price": 0.19,
+      "image_url": "https://cards.scryfall.io/normal/front/e/e/ee44297b-fd89-4d95-a502-cdd98fd4fbc3.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Sylvan Anthem",
+      "set": "mh2",
+      "cn": "176",
+      "quantity": 1,
+      "price": 0.79,
+      "image_url": "https://cards.scryfall.io/normal/front/a/1/a119edc2-9e0f-43d1-a13d-25827f86e3e3.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Tireless Provisioner",
+      "set": "mh2",
+      "cn": "180",
+      "quantity": 1,
+      "price": 1.78,
+      "image_url": "https://cards.scryfall.io/normal/front/5/c/5c5be54d-660e-42ab-b5ea-5e1cf3bad0bc.jpg",
+      "type_line": "Creature \u2014 Elf Scout"
+    },
+    {
+      "name": "Greensleeves, Maro-Sorcerer",
+      "set": "dmc",
+      "cn": "27",
+      "quantity": 1,
+      "price": 17.36,
+      "image_url": "https://cards.scryfall.io/normal/front/0/9/0969d7f3-cec5-4118-adb1-ff957eedf6ab.jpg",
+      "type_line": "Legendary Creature \u2014 Elemental Sorcerer"
+    },
+    {
+      "name": "Titania, Nature's Force",
+      "set": "dsc",
+      "cn": "202",
+      "quantity": 1,
+      "price": 1.26,
+      "image_url": "https://cards.scryfall.io/normal/front/1/2/1230be09-8436-4023-bb8b-d325456c0914.jpg",
+      "type_line": "Legendary Creature \u2014 Elemental"
+    },
+    {
+      "name": "Kenessos, Priest of Thassa",
+      "set": "j22",
+      "cn": "13",
+      "quantity": 1,
+      "price": 5.22,
+      "image_url": "https://cards.scryfall.io/normal/front/0/b/0ba97da8-0106-4e8b-b58b-8f2d63e3d618.jpg",
+      "type_line": "Legendary Creature \u2014 Merfolk Cleric"
+    },
+    {
+      "name": "Elrond, Lord of Rivendell",
+      "set": "ltr",
+      "cn": "49",
+      "quantity": 1,
+      "price": 0.08,
+      "image_url": "https://cards.scryfall.io/normal/front/a/6/a62a5e55-fa1b-4c70-9293-740dd513d52e.jpg",
+      "type_line": "Legendary Creature \u2014 Elf Noble"
+    },
+    {
+      "name": "Elven Farsight",
+      "set": "ltr",
+      "cn": "161",
+      "quantity": 1,
+      "price": 0.1,
+      "image_url": "https://cards.scryfall.io/normal/front/7/3/73d135b2-d2b8-499c-84d9-824370c19ccc.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Spelunking",
+      "set": "lci",
+      "cn": "213",
+      "quantity": 1,
+      "price": 2.92,
+      "image_url": "https://cards.scryfall.io/normal/front/d/3/d3be4257-2316-4a2e-b347-f71c0368a947.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Elfsworn Giant",
+      "set": "fdn",
+      "cn": "103",
+      "quantity": 1,
+      "price": 0.07,
+      "image_url": "https://cards.scryfall.io/normal/front/5/1/5128a5be-ffa6-4998-8488-872d80b24cb2.jpg",
+      "type_line": "Creature \u2014 Giant"
+    },
+    {
+      "name": "Matoya, Archon Elder",
+      "set": "fin",
+      "cn": "62",
+      "quantity": 1,
+      "price": 0.48,
+      "image_url": "https://cards.scryfall.io/normal/front/1/d/1dd61cf6-2fb5-4cff-ab00-7677ac85774c.jpg",
+      "type_line": "Legendary Creature \u2014 Human Warlock"
+    },
+    {
+      "name": "Chocobo Racetrack",
+      "set": "fin",
+      "cn": "179",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/1/5/1565813b-6912-42f4-bae0-22136a2d6a92.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Eusocial Engineering",
+      "set": "eoe",
+      "cn": "181",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/0/1/011bd7d8-6d60-482a-91b7-d3f0aad13b71.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Galadriel of Lothl\u00f3rien",
+      "set": "ltr",
+      "cn": "813",
+      "quantity": 1,
+      "price": 0,
+      "image_url": "https://cards.scryfall.io/normal/front/4/0/404dcf45-d44b-4e1d-9886-0d1d144a9c8a.jpg",
+      "type_line": "Legendary Creature \u2014 Elf Noble"
+    }
+  ],
+  "total_cards": 76,
+  "author": "LagZip",
+  "value": 73.08
+}

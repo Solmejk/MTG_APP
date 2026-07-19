@@ -1,0 +1,263 @@
+{
+  "name": "Millicent, Restless Revenant",
+  "format": "commander",
+  "commanders": [
+    {
+      "name": "Millicent, Restless Revenant",
+      "set": "voc",
+      "cn": "1",
+      "quantity": 1,
+      "price": 0.33,
+      "image_url": "https://cards.scryfall.io/normal/front/2/b/2b86b538-0766-440d-a2cd-f5d5bfcfb010.jpg",
+      "type_line": "Legendary Creature \u2014 Spirit Soldier"
+    }
+  ],
+  "cards": [
+    {
+      "name": "Island",
+      "set": "eoe",
+      "cn": "269",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/a/a/aaa212be-1db5-4493-86c8-c01d29348e31.jpg",
+      "type_line": "Basic Land \u2014 Island"
+    },
+    {
+      "name": "Plains",
+      "set": "m20",
+      "cn": "264",
+      "quantity": 1,
+      "price": 0.04,
+      "image_url": "https://cards.scryfall.io/normal/front/d/f/dfa01578-faf9-4694-86a0-c81f5b2a0dd8.jpg",
+      "type_line": "Basic Land \u2014 Plains"
+    },
+    {
+      "name": "Arcane Signet",
+      "set": "nec",
+      "cn": "144",
+      "quantity": 1,
+      "price": 0.4,
+      "image_url": "https://cards.scryfall.io/normal/front/7/b/7bdf4615-7a08-40fe-9e04-cdbe10a62e06.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Command Tower",
+      "set": "tmc",
+      "cn": "63",
+      "quantity": 1,
+      "price": 0.3,
+      "image_url": "https://cards.scryfall.io/normal/front/4/d/4d51a621-be31-4b74-8e0b-3958180a8bc5.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Coat of Arms",
+      "set": "plst",
+      "cn": "DDS-58",
+      "quantity": 1,
+      "price": 11.35,
+      "image_url": "https://cards.scryfall.io/normal/front/a/e/aef2eb36-f20d-4d90-a556-de2ba09b2635.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Darksteel Mutation",
+      "set": "soc",
+      "cn": "142",
+      "quantity": 1,
+      "price": 0.77,
+      "image_url": "https://cards.scryfall.io/normal/front/6/e/6e776a1e-266d-4b30-83da-be4721a55ed2.jpg",
+      "type_line": "Enchantment \u2014 Aura"
+    },
+    {
+      "name": "Skullclamp",
+      "set": "blc",
+      "cn": "283",
+      "quantity": 1,
+      "price": 6.27,
+      "image_url": "https://cards.scryfall.io/normal/front/9/7/97b729d3-5965-4e16-a50a-1e9bf51a9f13.jpg",
+      "type_line": "Artifact \u2014 Equipment"
+    },
+    {
+      "name": "Sol Ring",
+      "set": "c18",
+      "cn": "222",
+      "quantity": 1,
+      "price": 0.91,
+      "image_url": "https://cards.scryfall.io/normal/front/8/3/83a0f2eb-2f6d-4aaa-b7a9-ea06d5de7eca.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Idol of Oblivion",
+      "set": "plst",
+      "cn": "BLC-277",
+      "quantity": 1,
+      "price": 0.92,
+      "image_url": "https://cards.scryfall.io/normal/front/0/f/0fca2f74-d220-47f1-964a-a4cd6e096fbf.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Selfless Spirit",
+      "set": "soc",
+      "cn": "167",
+      "quantity": 1,
+      "price": 0.68,
+      "image_url": "https://cards.scryfall.io/normal/front/9/c/9cd16dac-3bf9-4a71-a906-0cfbf98cdca5.jpg",
+      "type_line": "Creature \u2014 Spirit Cleric"
+    },
+    {
+      "name": "Azorius Signet",
+      "set": "rvr",
+      "cn": "250",
+      "quantity": 1,
+      "price": 0.26,
+      "image_url": "https://cards.scryfall.io/normal/front/6/3/63e1d70c-7b19-4679-9ddc-33496e26c539.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Talisman of Progress",
+      "set": "fic",
+      "cn": "367",
+      "quantity": 1,
+      "price": 0.43,
+      "image_url": "https://cards.scryfall.io/normal/front/2/d/2dc4dfe7-ae80-4a6e-b588-fd497c35fe37.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Mentor of the Meek",
+      "set": "inr",
+      "cn": "34",
+      "quantity": 1,
+      "price": 0.2,
+      "image_url": "https://cards.scryfall.io/normal/front/2/8/280ca0f4-be07-452a-bbc0-c25570f14008.jpg",
+      "type_line": "Creature \u2014 Human Soldier"
+    },
+    {
+      "name": "Akroma's Will",
+      "set": "cmr",
+      "cn": "3",
+      "quantity": 1,
+      "price": 12.53,
+      "image_url": "https://cards.scryfall.io/normal/front/c/2/c281997b-1566-4469-a14c-6645f81ab023.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Welcoming Vampire",
+      "set": "pvow",
+      "cn": "46p",
+      "quantity": 1,
+      "price": 1.4,
+      "image_url": "https://cards.scryfall.io/normal/front/8/0/8054b7f7-4564-428a-9d0a-08773a5edc50.jpg",
+      "type_line": "Creature \u2014 Vampire"
+    },
+    {
+      "name": "Rumor Gatherer",
+      "set": "plst",
+      "cn": "SNC-29",
+      "quantity": 1,
+      "price": 0,
+      "image_url": "https://cards.scryfall.io/normal/front/9/2/9251f658-bf7a-45e7-a71f-8e359b838921.jpg",
+      "type_line": "Creature \u2014 Elf Wizard"
+    },
+    {
+      "name": "Bennie Bracks, Zoologist",
+      "set": "mkc",
+      "cn": "57",
+      "quantity": 1,
+      "price": 6.98,
+      "image_url": "https://cards.scryfall.io/normal/front/9/0/90645549-20f1-4fe9-8363-7f67c20fa3b6.jpg",
+      "type_line": "Legendary Creature \u2014 Elf Druid"
+    },
+    {
+      "name": "And They Shall Know No Fear",
+      "set": "40k",
+      "cn": "9",
+      "quantity": 1,
+      "price": 11.43,
+      "image_url": "https://cards.scryfall.io/normal/front/8/4/84d1bcef-907c-4c3a-8b52-6e633fa19667.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Tocasia's Welcome",
+      "set": "soc",
+      "cn": "181",
+      "quantity": 1,
+      "price": 0.91,
+      "image_url": "https://cards.scryfall.io/normal/front/9/0/90e38661-292a-45e7-bda9-51af53cf0f68.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Raise the Palisade",
+      "set": "ltc",
+      "cn": "23",
+      "quantity": 1,
+      "price": 10.1,
+      "image_url": "https://cards.scryfall.io/normal/front/7/9/7966eb7a-0ef7-470f-9769-0d5f45f0395b.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Moonshaker Cavalry",
+      "set": "soc",
+      "cn": "110",
+      "quantity": 1,
+      "price": 4.76,
+      "image_url": "https://cards.scryfall.io/normal/front/c/a/ca90d382-7e13-4637-a624-2a1b82abe56c.jpg",
+      "type_line": "Creature \u2014 Spirit Knight"
+    },
+    {
+      "name": "Everything Comes to Dust",
+      "set": "who",
+      "cn": "19",
+      "quantity": 1,
+      "price": 2.51,
+      "image_url": "https://cards.scryfall.io/normal/front/f/b/fb4b912c-07d4-42a1-8f3b-d5f34cca087f.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Caretaker's Talent",
+      "set": "pblb",
+      "cn": "6p",
+      "quantity": 1,
+      "price": 9.13,
+      "image_url": "https://cards.scryfall.io/normal/front/3/d/3dd18584-f075-4679-aed4-6ea6ae7f4f77.jpg",
+      "type_line": "Enchantment \u2014 Class"
+    },
+    {
+      "name": "Enduring Innocence",
+      "set": "pdsk",
+      "cn": "6p",
+      "quantity": 1,
+      "price": 3.65,
+      "image_url": "https://cards.scryfall.io/normal/front/f/0/f0ddac0d-b1a2-429e-832a-8c5d19288066.jpg",
+      "type_line": "Enchantment Creature \u2014 Sheep Glimmer"
+    },
+    {
+      "name": "Crystal Barricade",
+      "set": "pfdn",
+      "cn": "7p",
+      "quantity": 1,
+      "price": 1.09,
+      "image_url": "https://cards.scryfall.io/normal/front/f/9/f95d60d8-2021-4308-87f5-668403a027d2.jpg",
+      "type_line": "Artifact Creature \u2014 Wall"
+    },
+    {
+      "name": "Banner of Kinship",
+      "set": "pfdn",
+      "cn": "127p",
+      "quantity": 1,
+      "price": 4.73,
+      "image_url": "https://cards.scryfall.io/normal/front/8/a/8a00f5d5-1c37-45c9-9a9f-b42d0591178e.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Millicent, Restless Revenant",
+      "set": "voc",
+      "cn": "1",
+      "quantity": 1,
+      "price": 0.33,
+      "image_url": "https://cards.scryfall.io/normal/front/2/b/2b86b538-0766-440d-a2cd-f5d5bfcfb010.jpg",
+      "type_line": "Legendary Creature \u2014 Spirit Soldier"
+    }
+  ],
+  "total_cards": 27,
+  "author": "LagZip",
+  "value": 92.22
+}

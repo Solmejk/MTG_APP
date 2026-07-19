@@ -1,0 +1,731 @@
+{
+  "name": "Jorn, God of Winter",
+  "format": "commander",
+  "commanders": [
+    {
+      "name": "Jorn, God of Winter // Kaldring, the Rimestaff",
+      "set": "khm",
+      "cn": "179",
+      "quantity": 1,
+      "price": 0.21,
+      "image_url": "https://cards.scryfall.io/normal/front/c/6/c697548f-925b-405e-970a-4e78067d5c8e.jpg",
+      "type_line": "Legendary Snow Creature \u2014 God // Legendary Snow Artifact"
+    }
+  ],
+  "cards": [
+    {
+      "name": "Arcane Signet",
+      "set": "clb",
+      "cn": "298",
+      "quantity": 1,
+      "price": 0.5,
+      "image_url": "https://cards.scryfall.io/normal/front/5/b/5b245a5b-5a99-4d22-99ef-3f5bf49c3262.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Baleful Strix",
+      "set": "otc",
+      "cn": "215",
+      "quantity": 1,
+      "price": 1.62,
+      "image_url": "https://cards.scryfall.io/normal/front/b/e/be8439e6-f779-49f0-806a-b04995697a6a.jpg",
+      "type_line": "Artifact Creature \u2014 Bird"
+    },
+    {
+      "name": "Coldsteel Heart",
+      "set": "2x2",
+      "cn": "301",
+      "quantity": 1,
+      "price": 0.57,
+      "image_url": "https://cards.scryfall.io/normal/front/b/2/b2548ad2-3c62-4ed1-899c-1002b46cdd8f.jpg",
+      "type_line": "Snow Artifact"
+    },
+    {
+      "name": "Counterspell",
+      "set": "6ed",
+      "cn": "61",
+      "quantity": 1,
+      "price": 1.35,
+      "image_url": "https://cards.scryfall.io/normal/front/e/e/ee0d3f5f-7790-4772-bead-5d7114a23e94.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Exsanguinate",
+      "set": "j22",
+      "cn": "413",
+      "quantity": 1,
+      "price": 0.5,
+      "image_url": "https://cards.scryfall.io/normal/front/2/5/25ffebc3-8ad4-42da-b4f2-837ae22dee72.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Farseek",
+      "set": "pip",
+      "cn": "197",
+      "quantity": 1,
+      "price": 1.11,
+      "image_url": "https://cards.scryfall.io/normal/front/b/2/b2dd4d32-8cb8-4699-8e96-22746cf5ea57.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Putrefy",
+      "set": "khc",
+      "cn": "91",
+      "quantity": 1,
+      "price": 0.24,
+      "image_url": "https://cards.scryfall.io/normal/front/3/6/36e2a569-ed40-48f5-b39c-749b491bc207.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Rampant Growth",
+      "set": "m3c",
+      "cn": "240",
+      "quantity": 1,
+      "price": 0.45,
+      "image_url": "https://cards.scryfall.io/normal/front/d/b/db36f9df-102c-4d8f-b521-bdc6ec6ad911.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Reliquary Tower",
+      "set": "m3c",
+      "cn": "368",
+      "quantity": 1,
+      "price": 3.28,
+      "image_url": "https://cards.scryfall.io/normal/front/4/3/43631610-5fad-4b73-a57c-26bf38eff309.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Rhystic Study",
+      "set": "pcy",
+      "cn": "45",
+      "quantity": 1,
+      "price": 33.21,
+      "image_url": "https://cards.scryfall.io/normal/front/3/3/3394cefd-a3c6-4917-8f46-234e441ecfb6.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Sol Ring",
+      "set": "m3c",
+      "cn": "305",
+      "quantity": 1,
+      "price": 1.23,
+      "image_url": "https://cards.scryfall.io/normal/front/1/9/19911e6e-7c35-4281-b31c-266382f052cc.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Sword of the Animist",
+      "set": "ori",
+      "cn": "240",
+      "quantity": 1,
+      "price": 4.86,
+      "image_url": "https://cards.scryfall.io/normal/front/f/3/f3687c36-c0ae-4dba-9379-b420236bf529.jpg",
+      "type_line": "Legendary Artifact \u2014 Equipment"
+    },
+    {
+      "name": "Treasure Cruise",
+      "set": "ktk",
+      "cn": "59",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/7/a/7a59d4b1-6cf4-44ec-8a96-1bb7094fea21.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Howling Mine",
+      "set": "8ed",
+      "cn": "303",
+      "quantity": 1,
+      "price": 1.45,
+      "image_url": "https://cards.scryfall.io/normal/front/6/6/661236e2-a414-4a08-b7f7-704f1a2952a8.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Fellwar Stone",
+      "set": "sld",
+      "cn": "708",
+      "quantity": 1,
+      "price": 8.27,
+      "image_url": "https://cards.scryfall.io/normal/front/2/2/228933f3-3bca-4417-ab8a-5ccd19829c69.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Ohran Frostfang",
+      "set": "otc",
+      "cn": "199",
+      "quantity": 1,
+      "price": 3.45,
+      "image_url": "https://cards.scryfall.io/normal/front/0/6/0693bcd2-8a3d-4dcf-8360-5b9891044dfe.jpg",
+      "type_line": "Snow Creature \u2014 Snake"
+    },
+    {
+      "name": "Stampede",
+      "set": "5ed",
+      "cn": "327",
+      "quantity": 1,
+      "price": 0.54,
+      "image_url": "https://cards.scryfall.io/normal/front/f/c/fcec8997-bc9b-42c0-bac1-5644e9915fa2.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Time Warp",
+      "set": "m10",
+      "cn": "75",
+      "quantity": 1,
+      "price": 10.76,
+      "image_url": "https://cards.scryfall.io/normal/front/f/2/f21c7628-0571-4c09-8763-8e434e5e87d2.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Arcanis the Omnipotent",
+      "set": "fdn",
+      "cn": "585",
+      "quantity": 1,
+      "price": 0.22,
+      "image_url": "https://cards.scryfall.io/normal/front/a/6/a6fee90a-7cb3-4fad-91a7-1b1edbde0133.jpg",
+      "type_line": "Legendary Creature \u2014 Wizard"
+    },
+    {
+      "name": "Jace Beleren",
+      "set": "cmm",
+      "cn": "850",
+      "quantity": 1,
+      "price": 0.74,
+      "image_url": "https://cards.scryfall.io/normal/front/8/0/806d4e61-004f-4e52-b2e8-ba11b922cc7d.jpg",
+      "type_line": "Legendary Planeswalker \u2014 Jace"
+    },
+    {
+      "name": "Cryptolith Rite",
+      "set": "soi",
+      "cn": "200",
+      "quantity": 1,
+      "price": 4.28,
+      "image_url": "https://cards.scryfall.io/normal/front/2/9/2910adcd-882a-46af-8236-ca1a9e2c19ab.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Dark Depths",
+      "set": "m3c",
+      "cn": "334",
+      "quantity": 1,
+      "price": 1.79,
+      "image_url": "https://cards.scryfall.io/normal/front/1/3/13a4a3e6-77d4-453e-9978-68352fcf8d29.jpg",
+      "type_line": "Legendary Snow Land"
+    },
+    {
+      "name": "Beast Whisperer",
+      "set": "mkc",
+      "cn": "166",
+      "quantity": 1,
+      "price": 6.92,
+      "image_url": "https://cards.scryfall.io/normal/front/c/5/c5445a0d-319a-4237-94df-19a7182e6df2.jpg",
+      "type_line": "Creature \u2014 Elf Druid"
+    },
+    {
+      "name": "Deathmark",
+      "set": "10e",
+      "cn": "134",
+      "quantity": 1,
+      "price": 0.16,
+      "image_url": "https://cards.scryfall.io/normal/front/5/f/5f9271cc-6525-4a44-af24-915f0ba5afa9.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Ohran Viper",
+      "set": "c15",
+      "cn": "194",
+      "quantity": 1,
+      "price": 1.2,
+      "image_url": "https://cards.scryfall.io/normal/front/2/d/2dd1d028-0c7c-450b-a1ae-812b1212fef6.jpg",
+      "type_line": "Snow Creature \u2014 Snake"
+    },
+    {
+      "name": "Boreal Druid",
+      "set": "csp",
+      "cn": "105",
+      "quantity": 1,
+      "price": 1.65,
+      "image_url": "https://cards.scryfall.io/normal/front/4/7/473d3633-6dc7-4026-a50e-3ea76b9e8c20.jpg",
+      "type_line": "Snow Creature \u2014 Elf Druid"
+    },
+    {
+      "name": "Chilling Shade",
+      "set": "csp",
+      "cn": "53",
+      "quantity": 1,
+      "price": 0.16,
+      "image_url": "https://cards.scryfall.io/normal/front/d/0/d050c8b9-2b5a-4025-9886-73c418f4e22f.jpg",
+      "type_line": "Snow Creature \u2014 Shade"
+    },
+    {
+      "name": "Into the North",
+      "set": "csp",
+      "cn": "111",
+      "quantity": 1,
+      "price": 0.59,
+      "image_url": "https://cards.scryfall.io/normal/front/7/9/79cea55d-8ef3-44a5-894e-967f1e97fc02.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Mouth of Ronom",
+      "set": "csp",
+      "cn": "148",
+      "quantity": 1,
+      "price": 0.51,
+      "image_url": "https://cards.scryfall.io/normal/front/2/d/2d8f7396-23d3-48e2-8686-2b59ccbfc7e5.jpg",
+      "type_line": "Snow Land"
+    },
+    {
+      "name": "Rimefeather Owl",
+      "set": "csp",
+      "cn": "42",
+      "quantity": 1,
+      "price": 0.82,
+      "image_url": "https://cards.scryfall.io/normal/front/7/e/7e8e3552-a251-4a80-b0bb-a96a9f8a4c56.jpg",
+      "type_line": "Snow Creature \u2014 Bird"
+    },
+    {
+      "name": "Rime Transfusion",
+      "set": "csp",
+      "cn": "68",
+      "quantity": 1,
+      "price": 0.87,
+      "image_url": "https://cards.scryfall.io/normal/front/e/1/e18318fe-b429-459f-9b70-d444b48b8dc7.jpg",
+      "type_line": "Snow Enchantment \u2014 Aura"
+    },
+    {
+      "name": "Insight",
+      "set": "tmp",
+      "cn": "68",
+      "quantity": 1,
+      "price": 1.23,
+      "image_url": "https://cards.scryfall.io/normal/front/1/d/1dfd9cb9-51f6-4d09-b5c0-5b0ed9d16542.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Arcum's Astrolabe",
+      "set": "mh1",
+      "cn": "220",
+      "quantity": 1,
+      "price": 0.25,
+      "image_url": "https://cards.scryfall.io/normal/front/c/2/c2462fdf-a594-47d0-8e10-b55901e350d9.jpg",
+      "type_line": "Snow Artifact"
+    },
+    {
+      "name": "Abominable Treefolk",
+      "set": "mh1",
+      "cn": "194",
+      "quantity": 1,
+      "price": 0.19,
+      "image_url": "https://cards.scryfall.io/normal/front/1/e/1eddb834-ea01-44e2-afca-bd9a4ebbdb94.jpg",
+      "type_line": "Snow Creature \u2014 Treefolk"
+    },
+    {
+      "name": "Conifer Wurm",
+      "set": "mh1",
+      "cn": "159",
+      "quantity": 1,
+      "price": 0.18,
+      "image_url": "https://cards.scryfall.io/normal/front/8/4/84f99d23-5d3e-4f36-b1c7-3a893e4b4c32.jpg",
+      "type_line": "Snow Creature \u2014 Wurm"
+    },
+    {
+      "name": "Dead of Winter",
+      "set": "mh1",
+      "cn": "85",
+      "quantity": 1,
+      "price": 0.65,
+      "image_url": "https://cards.scryfall.io/normal/front/f/4/f480df6d-e227-4ccb-ad6d-a4ad48a360ad.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Frostwalk Bastion",
+      "set": "mh1",
+      "cn": "240",
+      "quantity": 1,
+      "price": 0.27,
+      "image_url": "https://cards.scryfall.io/normal/front/b/f/bfb5d83f-2b7c-4c22-ac37-938e7cd1654a.jpg",
+      "type_line": "Snow Land"
+    },
+    {
+      "name": "Glacial Revelation",
+      "set": "mh1",
+      "cn": "167",
+      "quantity": 1,
+      "price": 0.25,
+      "image_url": "https://cards.scryfall.io/normal/front/f/6/f615a5e9-deec-46cc-9444-de81cb0da9c0.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Marit Lage's Slumber",
+      "set": "mh1",
+      "cn": "56",
+      "quantity": 1,
+      "price": 0.38,
+      "image_url": "https://cards.scryfall.io/normal/front/4/f/4f5d2a6e-22cd-4493-9e58-e9c2aa3a31ab.jpg",
+      "type_line": "Legendary Snow Enchantment"
+    },
+    {
+      "name": "Rime Tender",
+      "set": "mh1",
+      "cn": "176",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/8/c/8ce0ab73-4df6-479f-8710-61ef87cce3b4.jpg",
+      "type_line": "Snow Creature \u2014 Human Druid"
+    },
+    {
+      "name": "Scrying Sheets",
+      "set": "csp",
+      "cn": "149",
+      "quantity": 1,
+      "price": 2.7,
+      "image_url": "https://cards.scryfall.io/normal/front/1/9/19e95422-c6fe-4750-916b-43bf22ae193a.jpg",
+      "type_line": "Snow Land"
+    },
+    {
+      "name": "Ice-Fang Coatl",
+      "set": "mh1",
+      "cn": "203",
+      "quantity": 1,
+      "price": 1.54,
+      "image_url": "https://cards.scryfall.io/normal/front/6/a/6a55cfed-e76c-4ade-ac78-a546e05fe8da.jpg",
+      "type_line": "Snow Creature \u2014 Snake"
+    },
+    {
+      "name": "Ponder",
+      "set": "otc",
+      "cn": "105",
+      "quantity": 1,
+      "price": 2.49,
+      "image_url": "https://cards.scryfall.io/normal/front/5/a/5af43ceb-56d2-47d4-ab43-853338ab293c.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Three Visits",
+      "set": "ptk",
+      "cn": "153",
+      "quantity": 1,
+      "price": 30.65,
+      "image_url": "https://cards.scryfall.io/normal/front/3/0/306d22ae-657e-4b52-8cd9-6fc3df9e8376.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Snowblind",
+      "set": "ice",
+      "cn": "264",
+      "quantity": 1,
+      "price": 0.69,
+      "image_url": "https://cards.scryfall.io/normal/front/5/f/5f62c376-487a-42bc-bd85-ab8b0480f7dc.jpg",
+      "type_line": "Enchantment \u2014 Aura"
+    },
+    {
+      "name": "Snow Devil",
+      "set": "ice",
+      "cn": "100",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/2/b/2be3a9a5-2ac5-4ea4-915d-8cff35c0e72f.jpg",
+      "type_line": "Enchantment \u2014 Aura"
+    },
+    {
+      "name": "Sunstone",
+      "set": "ice",
+      "cn": "341",
+      "quantity": 1,
+      "price": 0.38,
+      "image_url": "https://cards.scryfall.io/normal/front/3/c/3c1c67fa-ff88-4a61-b8a5-8a872b3dc44f.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Winter's Chill",
+      "set": "ice",
+      "cn": "107",
+      "quantity": 1,
+      "price": 1.56,
+      "image_url": "https://cards.scryfall.io/normal/front/a/7/a779aca7-ff2c-48d8-9484-6ad04b2c6bcb.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Aqueous Form",
+      "set": "ths",
+      "cn": "39",
+      "quantity": 1,
+      "price": 0.39,
+      "image_url": "https://cards.scryfall.io/normal/front/b/a/ba104245-0483-407f-971b-ad6d8efd9733.jpg",
+      "type_line": "Enchantment \u2014 Aura"
+    },
+    {
+      "name": "Koskun Falls",
+      "set": "hml",
+      "cn": "55",
+      "quantity": 1,
+      "price": 9.34,
+      "image_url": "https://cards.scryfall.io/normal/front/0/4/04292a4e-8910-4911-a76d-4f2c3e15da33.jpg",
+      "type_line": "World Enchantment"
+    },
+    {
+      "name": "Horizon Stone",
+      "set": "cmr",
+      "cn": "315",
+      "quantity": 1,
+      "price": 0.68,
+      "image_url": "https://cards.scryfall.io/normal/front/6/a/6affd9c6-f7ab-488e-85fa-2a3a48383414.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Anara, Wolvid Familiar",
+      "set": "cmr",
+      "cn": "214",
+      "quantity": 1,
+      "price": 0.32,
+      "image_url": "https://cards.scryfall.io/normal/front/9/a/9a67cfaa-990c-4dcb-97a9-9c5d7316cabe.jpg",
+      "type_line": "Legendary Creature \u2014 Wolf Beast"
+    },
+    {
+      "name": "Rimewood Falls",
+      "set": "khm",
+      "cn": "266",
+      "quantity": 1,
+      "price": 0.79,
+      "image_url": "https://cards.scryfall.io/normal/front/d/a/da1db084-f235-4e26-8867-5f0835a0d283.jpg",
+      "type_line": "Snow Land \u2014 Forest Island"
+    },
+    {
+      "name": "Woodland Chasm",
+      "set": "plst",
+      "cn": "KHM-274",
+      "quantity": 1,
+      "price": 0.94,
+      "image_url": "https://cards.scryfall.io/normal/front/a/3/a3b4cc0d-328f-40c3-ba34-23d67488e741.jpg",
+      "type_line": "Snow Land \u2014 Swamp Forest"
+    },
+    {
+      "name": "Ice Tunnel",
+      "set": "khm",
+      "cn": "262",
+      "quantity": 1,
+      "price": 0.5,
+      "image_url": "https://cards.scryfall.io/normal/front/8/c/8cff3ef0-4dfb-472e-aa1e-77613dd0f6d8.jpg",
+      "type_line": "Snow Land \u2014 Island Swamp"
+    },
+    {
+      "name": "Replicating Ring",
+      "set": "khm",
+      "cn": "244",
+      "quantity": 1,
+      "price": 0.46,
+      "image_url": "https://cards.scryfall.io/normal/front/b/0/b079e285-8431-46aa-bb04-70cac586ed0b.jpg",
+      "type_line": "Snow Artifact"
+    },
+    {
+      "name": "Spirit of the Aldergard",
+      "set": "khm",
+      "cn": "195",
+      "quantity": 1,
+      "price": 0.23,
+      "image_url": "https://cards.scryfall.io/normal/front/2/2/220df551-3820-4910-a206-14501ba02e69.jpg",
+      "type_line": "Snow Creature \u2014 Bear Spirit"
+    },
+    {
+      "name": "Blizzard Brawl",
+      "set": "khm",
+      "cn": "162",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/6/3/6318918f-34e4-4bbf-9816-8e88f21ae324.jpg",
+      "type_line": "Snow Sorcery"
+    },
+    {
+      "name": "Pilfering Hawk",
+      "set": "khm",
+      "cn": "71",
+      "quantity": 1,
+      "price": 0.12,
+      "image_url": "https://cards.scryfall.io/normal/front/7/6/76ee3829-8dec-4c0f-a6c2-ad47a1c94cfc.jpg",
+      "type_line": "Snow Creature \u2014 Bird"
+    },
+    {
+      "name": "Sculptor of Winter",
+      "set": "khm",
+      "cn": "193",
+      "quantity": 1,
+      "price": 0.12,
+      "image_url": "https://cards.scryfall.io/normal/front/9/d/9dab2ca2-0039-4eac-a7dc-68756362737d.jpg",
+      "type_line": "Snow Creature \u2014 Elf Rogue"
+    },
+    {
+      "name": "Ascendant Spirit",
+      "set": "khm",
+      "cn": "43",
+      "quantity": 1,
+      "price": 0.41,
+      "image_url": "https://cards.scryfall.io/normal/front/e/a/ea56de43-c0fd-4627-846d-41a962b95f17.jpg",
+      "type_line": "Snow Creature \u2014 Spirit"
+    },
+    {
+      "name": "Frost Augur",
+      "set": "khm",
+      "cn": "56",
+      "quantity": 1,
+      "price": 0.18,
+      "image_url": "https://cards.scryfall.io/normal/front/a/2/a2ae592f-caf6-445a-970b-f8101998e657.jpg",
+      "type_line": "Snow Creature \u2014 Human Wizard"
+    },
+    {
+      "name": "Graven Lore",
+      "set": "khm",
+      "cn": "61",
+      "quantity": 1,
+      "price": 0.18,
+      "image_url": "https://cards.scryfall.io/normal/front/e/4/e4386e5c-32b1-4096-a93f-fedd1a4801fc.jpg",
+      "type_line": "Snow Instant"
+    },
+    {
+      "name": "Shimmerdrift Vale",
+      "set": "khm",
+      "cn": "267",
+      "quantity": 1,
+      "price": 0.15,
+      "image_url": "https://cards.scryfall.io/normal/front/f/0/f09d98db-0176-41a7-b99b-ead29876cdab.jpg",
+      "type_line": "Snow Land"
+    },
+    {
+      "name": "Priest of the Haunted Edge",
+      "set": "khm",
+      "cn": "104",
+      "quantity": 1,
+      "price": 0.16,
+      "image_url": "https://cards.scryfall.io/normal/front/0/c/0cde0f4d-5acc-4a25-a3d6-c6b9b734360c.jpg",
+      "type_line": "Snow Creature \u2014 Zombie Cleric"
+    },
+    {
+      "name": "Blessing of Frost",
+      "set": "khm",
+      "cn": "161",
+      "quantity": 1,
+      "price": 0.26,
+      "image_url": "https://cards.scryfall.io/normal/front/4/2/42f01f4d-491e-4f25-a017-a0d9c437ac8c.jpg",
+      "type_line": "Snow Sorcery"
+    },
+    {
+      "name": "Icebind Pillar",
+      "set": "khm",
+      "cn": "62",
+      "quantity": 1,
+      "price": 0.16,
+      "image_url": "https://cards.scryfall.io/normal/front/a/3/a3152f1f-5d3f-4bc4-9b6f-f2983ab3f691.jpg",
+      "type_line": "Snow Artifact"
+    },
+    {
+      "name": "Ancient Silver Dragon",
+      "set": "clb",
+      "cn": "56",
+      "quantity": 1,
+      "price": 47.21,
+      "image_url": "https://cards.scryfall.io/normal/front/c/e/ced18935-4ce9-466e-a88d-2b14ff8f989f.jpg",
+      "type_line": "Creature \u2014 Elder Dragon"
+    },
+    {
+      "name": "Decanter of Endless Water",
+      "set": "clb",
+      "cn": "309",
+      "quantity": 1,
+      "price": 2.47,
+      "image_url": "https://cards.scryfall.io/normal/front/5/1/518bbc36-58ea-44c4-a857-75a3aff058f5.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Urborg Repossession",
+      "set": "dmu",
+      "cn": "114",
+      "quantity": 1,
+      "price": 0.13,
+      "image_url": "https://cards.scryfall.io/normal/front/e/c/ecb8dab0-ecce-4321-b382-c58b296c2fd3.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Relic of Legends",
+      "set": "dmu",
+      "cn": "236",
+      "quantity": 1,
+      "price": 1.32,
+      "image_url": "https://cards.scryfall.io/normal/front/6/4/64a2809e-c441-416c-90ff-6fb1e246dff3.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Hylda's Crown of Winter",
+      "set": "woe",
+      "cn": "247",
+      "quantity": 1,
+      "price": 0.42,
+      "image_url": "https://cards.scryfall.io/normal/front/b/0/b0d4a6c0-f00e-45a7-9c88-899460007020.jpg",
+      "type_line": "Legendary Artifact"
+    },
+    {
+      "name": "Well Rested",
+      "set": "pip",
+      "cn": "88",
+      "quantity": 1,
+      "price": 2.33,
+      "image_url": "https://cards.scryfall.io/normal/front/e/d/ed640359-01e2-4a96-a4ab-aca053a2498d.jpg",
+      "type_line": "Enchantment \u2014 Aura"
+    },
+    {
+      "name": "Dig Up",
+      "set": "vow",
+      "cn": "197",
+      "quantity": 1,
+      "price": 0.43,
+      "image_url": "https://cards.scryfall.io/normal/front/8/f/8f14c947-2452-4fd6-8f1a-391cf5898100.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Command Tower",
+      "set": "cm1",
+      "cn": "2",
+      "quantity": 1,
+      "price": 0,
+      "image_url": "https://cards.scryfall.io/normal/front/b/f/bf5dafb0-4fb1-470d-85ce-88f3ae32340b.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Snow-Covered Forest",
+      "set": "csp",
+      "cn": "155",
+      "quantity": 11,
+      "price": 0.86,
+      "image_url": "https://cards.scryfall.io/normal/front/8/3/838c915d-8153-43c2-b513-dfbe4e9388a5.jpg",
+      "type_line": "Basic Snow Land \u2014 Forest"
+    },
+    {
+      "name": "Snow-Covered Island",
+      "set": "csp",
+      "cn": "152",
+      "quantity": 9,
+      "price": 1.38,
+      "image_url": "https://cards.scryfall.io/normal/front/6/a/6abf0692-07d1-4b72-af06-93d0e338589d.jpg",
+      "type_line": "Basic Snow Land \u2014 Island"
+    },
+    {
+      "name": "Snow-Covered Swamp",
+      "set": "csp",
+      "cn": "153",
+      "quantity": 4,
+      "price": 0.85,
+      "image_url": "https://cards.scryfall.io/normal/front/c/4/c4dacaf1-09b8-42bb-8064-990190fdaf81.jpg",
+      "type_line": "Basic Snow Land \u2014 Swamp"
+    },
+    {
+      "name": "Jorn, God of Winter // Kaldring, the Rimestaff",
+      "set": "khm",
+      "cn": "179",
+      "quantity": 1,
+      "price": 0.21,
+      "image_url": "https://cards.scryfall.io/normal/front/c/6/c697548f-925b-405e-970a-4e78067d5c8e.jpg",
+      "type_line": "Legendary Snow Creature \u2014 God // Legendary Snow Artifact"
+    }
+  ],
+  "total_cards": 100,
+  "author": "Solmejk",
+  "value": 232.46
+}

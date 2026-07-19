@@ -1,0 +1,677 @@
+{
+  "name": "Malcolm, Keen-Eyed Navigator / Kediss, Emberclaw Familiar (PLAYTEST)",
+  "format": "commander",
+  "commanders": [
+    {
+      "name": "Malcolm, Keen-Eyed Navigator",
+      "set": "spg",
+      "cn": "2",
+      "quantity": 1,
+      "price": 5.05,
+      "image_url": "https://cards.scryfall.io/normal/front/c/f/cfcb3051-161f-42f8-bfec-db03b349ff00.jpg",
+      "type_line": "Legendary Creature \u2014 Siren Pirate"
+    },
+    {
+      "name": "Kediss, Emberclaw Familiar",
+      "set": "cmr",
+      "cn": "188",
+      "quantity": 1,
+      "price": 5.73,
+      "image_url": "https://cards.scryfall.io/normal/front/f/6/f606ebf1-483d-4331-b16a-9fb6f591a39f.jpg",
+      "type_line": "Legendary Creature \u2014 Elemental Lizard"
+    }
+  ],
+  "cards": [
+    {
+      "name": "Island",
+      "set": "eoe",
+      "cn": "269",
+      "quantity": 15,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/a/a/aaa212be-1db5-4493-86c8-c01d29348e31.jpg",
+      "type_line": "Basic Land \u2014 Island"
+    },
+    {
+      "name": "Mountain",
+      "set": "afr",
+      "cn": "274",
+      "quantity": 16,
+      "price": 0.1,
+      "image_url": "https://cards.scryfall.io/normal/front/e/d/edabc558-2c54-4c7b-a6fa-1e75ddcf12f9.jpg",
+      "type_line": "Basic Land \u2014 Mountain"
+    },
+    {
+      "name": "Arcane Signet",
+      "set": "plst",
+      "cn": "OTC-252",
+      "quantity": 1,
+      "price": 0.89,
+      "image_url": "https://cards.scryfall.io/normal/front/a/6/a660543c-4d8d-4c4a-8135-3a3edbabcb47.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Brimstone Trebuchet",
+      "set": "eld",
+      "cn": "116",
+      "quantity": 1,
+      "price": 0.06,
+      "image_url": "https://cards.scryfall.io/normal/front/7/7/77c49e0e-4375-4e45-a57b-8df667e45ce6.jpg",
+      "type_line": "Artifact Creature \u2014 Wall"
+    },
+    {
+      "name": "Command Tower",
+      "set": "tmc",
+      "cn": "63",
+      "quantity": 1,
+      "price": 0.3,
+      "image_url": "https://cards.scryfall.io/normal/front/4/d/4d51a621-be31-4b74-8e0b-3958180a8bc5.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Gadwick, the Wizened",
+      "set": "eld",
+      "cn": "48",
+      "quantity": 1,
+      "price": 0.34,
+      "image_url": "https://cards.scryfall.io/normal/front/6/2/62ddce0d-f22a-4fcd-9a4a-d71938750ba1.jpg",
+      "type_line": "Legendary Creature \u2014 Human Wizard"
+    },
+    {
+      "name": "Torbran, Thane of Red Fell",
+      "set": "peld",
+      "cn": "147p",
+      "quantity": 1,
+      "price": 2.66,
+      "image_url": "https://cards.scryfall.io/normal/front/f/4/f4b20e5b-b3b7-4357-97ea-3872e704e3e3.jpg",
+      "type_line": "Legendary Creature \u2014 Dwarf Noble"
+    },
+    {
+      "name": "Blades of Velis Vel",
+      "set": "mm2",
+      "cn": "105",
+      "quantity": 1,
+      "price": 0.17,
+      "image_url": "https://cards.scryfall.io/normal/front/8/3/83b17fb1-4a33-454f-9222-c6d5671c7e2f.jpg",
+      "type_line": "Kindred Instant \u2014 Shapeshifter"
+    },
+    {
+      "name": "Chaos Warp",
+      "set": "soc",
+      "cn": "239",
+      "quantity": 1,
+      "price": 0.44,
+      "image_url": "https://cards.scryfall.io/normal/front/6/5/65ae241c-8955-4c97-8be6-7356fbee2195.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Guttersnipe",
+      "set": "tdc",
+      "cn": "217",
+      "quantity": 1,
+      "price": 0.5,
+      "image_url": "https://cards.scryfall.io/normal/front/f/d/fd5be605-c7c3-4c0b-a68e-65452b27d3ce.jpg",
+      "type_line": "Creature \u2014 Goblin Shaman"
+    },
+    {
+      "name": "Mind Spring",
+      "set": "ddt",
+      "cn": "14",
+      "quantity": 1,
+      "price": 0.29,
+      "image_url": "https://cards.scryfall.io/normal/front/3/e/3efa29a6-64bc-4d0d-8522-b548bd18bc76.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Reckless Fireweaver",
+      "set": "kld",
+      "cn": "126",
+      "quantity": 1,
+      "price": 0.61,
+      "image_url": "https://cards.scryfall.io/normal/front/6/3/63ffac51-62c4-4170-85b3-a43d7cfae7d7.jpg",
+      "type_line": "Creature \u2014 Human Artificer"
+    },
+    {
+      "name": "Reliquary Tower",
+      "set": "plst",
+      "cn": "M19-254",
+      "quantity": 1,
+      "price": 1.64,
+      "image_url": "https://cards.scryfall.io/normal/front/a/0/a02c44e9-fbcd-4924-a641-6dbc55076349.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Rolling Thunder",
+      "set": "bfz",
+      "cn": "154",
+      "quantity": 1,
+      "price": 0.16,
+      "image_url": "https://cards.scryfall.io/normal/front/5/d/5dd980d5-c6d1-4834-977b-22e80f0b449d.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Sol Ring",
+      "set": "c18",
+      "cn": "222",
+      "quantity": 1,
+      "price": 0.91,
+      "image_url": "https://cards.scryfall.io/normal/front/8/3/83a0f2eb-2f6d-4aaa-b7a9-ea06d5de7eca.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Thought Vessel",
+      "set": "cmr",
+      "cn": "346",
+      "quantity": 1,
+      "price": 1.19,
+      "image_url": "https://cards.scryfall.io/normal/front/f/5/f58ab310-cbee-4f0c-9819-a2e2121932ff.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Teferi's Ageless Insight",
+      "set": "m21",
+      "cn": "76",
+      "quantity": 1,
+      "price": 2.47,
+      "image_url": "https://cards.scryfall.io/normal/front/c/3/c38d1722-96b0-4756-9da9-fe18b1c80649.jpg",
+      "type_line": "Legendary Enchantment"
+    },
+    {
+      "name": "Glint-Horn Buccaneer",
+      "set": "pm20",
+      "cn": "141p",
+      "quantity": 1,
+      "price": 2.95,
+      "image_url": "https://cards.scryfall.io/normal/front/7/7/77ebcca3-fc2c-4a99-b637-110080d5573d.jpg",
+      "type_line": "Creature \u2014 Minotaur Pirate"
+    },
+    {
+      "name": "Spectral Sailor",
+      "set": "fdn",
+      "cn": "164",
+      "quantity": 1,
+      "price": 0.1,
+      "image_url": "https://cards.scryfall.io/normal/front/0/3/03a49535-c5f3-4a6f-b333-7ac7bffdc9ae.jpg",
+      "type_line": "Creature \u2014 Spirit Pirate"
+    },
+    {
+      "name": "Mirror of the Forebears",
+      "set": "c17",
+      "cn": "54",
+      "quantity": 1,
+      "price": 1.77,
+      "image_url": "https://cards.scryfall.io/normal/front/8/2/82e96f29-ce98-4e2d-8035-da3994ab66db.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Shivan Reef",
+      "set": "tdc",
+      "cn": "393",
+      "quantity": 1,
+      "price": 0.47,
+      "image_url": "https://cards.scryfall.io/normal/front/a/6/a67ddfae-746f-4952-8064-7d48f9f22981.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Counterspell",
+      "set": "dsc",
+      "cn": "114",
+      "quantity": 1,
+      "price": 2.78,
+      "image_url": "https://cards.scryfall.io/normal/front/4/f/4f616706-ec97-4923-bb1e-11a69fbaa1f8.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Firebrand Archer",
+      "set": "fdn",
+      "cn": "196",
+      "quantity": 1,
+      "price": 0.09,
+      "image_url": "https://cards.scryfall.io/normal/front/f/e/fe0312f1-4c98-4b7f-8a34-0059ea80edef.jpg",
+      "type_line": "Creature \u2014 Human Archer"
+    },
+    {
+      "name": "Thermo-Alchemist",
+      "set": "uma",
+      "cn": "151",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/c/9/c9cac6a6-ded0-47cb-88d2-8838db9cc6b2.jpg",
+      "type_line": "Creature \u2014 Human Shaman"
+    },
+    {
+      "name": "Comet Storm",
+      "set": "c20",
+      "cn": "148",
+      "quantity": 1,
+      "price": 1.62,
+      "image_url": "https://cards.scryfall.io/normal/front/0/6/066383e2-55c2-433f-8665-f0fd22dfa3f0.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Izzet Signet",
+      "set": "blc",
+      "cn": "278",
+      "quantity": 1,
+      "price": 0.57,
+      "image_url": "https://cards.scryfall.io/normal/front/a/3/a39b4b15-cd3e-4d30-8de2-8e584524d018.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Electrostatic Field",
+      "set": "plst",
+      "cn": "GRN-97",
+      "quantity": 1,
+      "price": 0.9,
+      "image_url": "https://cards.scryfall.io/normal/front/2/d/2ddbabad-4f23-4138-a25e-9de1b80a1389.jpg",
+      "type_line": "Creature \u2014 Wall"
+    },
+    {
+      "name": "Nettle Drone",
+      "set": "bfz",
+      "cn": "131",
+      "quantity": 1,
+      "price": 0.27,
+      "image_url": "https://cards.scryfall.io/normal/front/e/6/e633833a-cc4b-4c8c-a0d3-cd263e09df81.jpg",
+      "type_line": "Creature \u2014 Eldrazi Drone"
+    },
+    {
+      "name": "Stroke of Genius",
+      "set": "moc",
+      "cn": "238",
+      "quantity": 1,
+      "price": 0.22,
+      "image_url": "https://cards.scryfall.io/normal/front/c/7/c77deaac-7e13-45b4-921d-8116bddf3bb6.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Finale of Revelation",
+      "set": "fdn",
+      "cn": "589",
+      "quantity": 1,
+      "price": 0.34,
+      "image_url": "https://cards.scryfall.io/normal/front/0/a/0a77e063-e8f6-4cb2-954e-74cf41ce73da.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Amorphous Axe",
+      "set": "cmr",
+      "cn": "295",
+      "quantity": 1,
+      "price": 0.06,
+      "image_url": "https://cards.scryfall.io/normal/front/2/d/2de53345-5809-4704-bd60-682b0c3c3999.jpg",
+      "type_line": "Artifact \u2014 Equipment"
+    },
+    {
+      "name": "Talisman of Creativity",
+      "set": "m3c",
+      "cn": "308",
+      "quantity": 1,
+      "price": 2.2,
+      "image_url": "https://cards.scryfall.io/normal/front/9/d/9d8b61ab-9cc9-4eed-8241-67a834a1786d.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Volatile Claws",
+      "set": "mh1",
+      "cn": "154",
+      "quantity": 1,
+      "price": 0.18,
+      "image_url": "https://cards.scryfall.io/normal/front/3/6/36cb119b-dd15-40d2-8f75-c92f5d41d1e1.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Pull from Tomorrow",
+      "set": "drc",
+      "cn": "81",
+      "quantity": 1,
+      "price": 0.17,
+      "image_url": "https://cards.scryfall.io/normal/front/e/4/e45740e7-c992-4ec0-93bd-9718b6d3ffea.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Wings of Velis Vel",
+      "set": "mm2",
+      "cn": "70",
+      "quantity": 1,
+      "price": 0.13,
+      "image_url": "https://cards.scryfall.io/normal/front/c/c/cc5f287b-beaa-4b51-8db7-91982e2c0bb0.jpg",
+      "type_line": "Kindred Instant \u2014 Shapeshifter"
+    },
+    {
+      "name": "Blue Sun's Zenith",
+      "set": "a25",
+      "cn": "44",
+      "quantity": 1,
+      "price": 1.72,
+      "image_url": "https://cards.scryfall.io/normal/front/5/0/500a2aa4-712f-41be-920e-f2f448ff83d0.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Amoeboid Changeling",
+      "set": "j22",
+      "cn": "269",
+      "quantity": 1,
+      "price": 0.72,
+      "image_url": "https://cards.scryfall.io/normal/front/5/5/559a14ce-de7a-4ce4-8c46-99818372187f.jpg",
+      "type_line": "Creature \u2014 Shapeshifter"
+    },
+    {
+      "name": "Blisterspit Gremlin",
+      "set": "iko",
+      "cn": "108",
+      "quantity": 1,
+      "price": 0.16,
+      "image_url": "https://cards.scryfall.io/normal/front/4/e/4ec65b97-d5c0-4609-8a60-3c4daa3e59c1.jpg",
+      "type_line": "Creature \u2014 Gremlin"
+    },
+    {
+      "name": "Maskwood Nexus",
+      "set": "plst",
+      "cn": "KHM-240",
+      "quantity": 1,
+      "price": 0.88,
+      "image_url": "https://cards.scryfall.io/normal/front/9/e/9e1aef13-3a5d-4a83-8851-e667a4cb5a67.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Frostboil Snarl",
+      "set": "drc",
+      "cn": "158",
+      "quantity": 1,
+      "price": 0.21,
+      "image_url": "https://cards.scryfall.io/normal/front/8/5/85ca1a50-7627-4a6e-aaf7-83761abc31b9.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Crackle with Power",
+      "set": "stx",
+      "cn": "95",
+      "quantity": 1,
+      "price": 7.08,
+      "image_url": "https://cards.scryfall.io/normal/front/d/e/de547f52-3798-4b3a-947d-24873251204b.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Ingenious Mastery",
+      "set": "pstx",
+      "cn": "44p",
+      "quantity": 1,
+      "price": 0.09,
+      "image_url": "https://cards.scryfall.io/normal/front/8/b/8bc6d128-48a3-4b01-b4af-f63fa39888eb.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Commander's Insight",
+      "set": "soc",
+      "cn": "113",
+      "quantity": 1,
+      "price": 0.25,
+      "image_url": "https://cards.scryfall.io/normal/front/1/a/1a40e4da-a631-4423-b70f-701b27b09f79.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Academy Manufactor",
+      "set": "moc",
+      "cn": "346",
+      "quantity": 1,
+      "price": 4.89,
+      "image_url": "https://cards.scryfall.io/normal/front/f/9/f9c55add-d621-4477-95ec-f2b691c0bdae.jpg",
+      "type_line": "Artifact Creature \u2014 Assembly-Worker"
+    },
+    {
+      "name": "Xorn",
+      "set": "afr",
+      "cn": "167",
+      "quantity": 1,
+      "price": 7.18,
+      "image_url": "https://cards.scryfall.io/normal/front/f/7/f73fdf76-e3a6-49d0-bfb0-4b7cdbd4271e.jpg",
+      "type_line": "Creature \u2014 Elemental"
+    },
+    {
+      "name": "Drown in Dreams",
+      "set": "plst",
+      "cn": "MIC-13",
+      "quantity": 1,
+      "price": 0.48,
+      "image_url": "https://cards.scryfall.io/normal/front/0/4/047cc3eb-7ec2-4813-899c-890b74fbbed1.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Stormcarved Coast",
+      "set": "psos",
+      "cn": "263p",
+      "quantity": 1,
+      "price": 1.07,
+      "image_url": "https://cards.scryfall.io/normal/front/2/6/26e53f39-f119-461e-8214-9ceea0bf5483.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Kessig Flamebreather",
+      "set": "vow",
+      "cn": "164",
+      "quantity": 1,
+      "price": 4.13,
+      "image_url": "https://cards.scryfall.io/normal/front/3/0/303ad78a-b02a-44dc-afe6-7f95781a5062.jpg",
+      "type_line": "Creature \u2014 Human Shaman"
+    },
+    {
+      "name": "Universal Surveillance",
+      "set": "eoc",
+      "cn": "81",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/7/7/77e9ef36-bc1b-4919-9bb5-8fd6b2d431cc.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Jaya's Immolating Inferno",
+      "set": "dom",
+      "cn": "133",
+      "quantity": 1,
+      "price": 0.81,
+      "image_url": "https://cards.scryfall.io/normal/front/4/8/48268bb8-1326-451b-9fae-de6605eb6cfd.jpg",
+      "type_line": "Legendary Sorcery"
+    },
+    {
+      "name": "Sulfur Falls",
+      "set": "drc",
+      "cn": "173",
+      "quantity": 1,
+      "price": 0.43,
+      "image_url": "https://cards.scryfall.io/normal/front/e/b/eb24d2b9-8683-454b-b911-d694202d1081.jpg",
+      "type_line": "Land"
+    },
+    {
+      "name": "Arcane Adaptation",
+      "set": "xln",
+      "cn": "46",
+      "quantity": 1,
+      "price": 2.21,
+      "image_url": "https://cards.scryfall.io/normal/front/b/f/bf3edaaf-cf63-4e17-94ae-9d9991d9fb5f.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Lightning-Rig Crew",
+      "set": "xln",
+      "cn": "150",
+      "quantity": 1,
+      "price": 0.07,
+      "image_url": "https://cards.scryfall.io/normal/front/e/b/eb4a34ce-94d5-4e4d-97cc-1326cf5241f5.jpg",
+      "type_line": "Creature \u2014 Goblin Pirate"
+    },
+    {
+      "name": "Siren Stormtamer",
+      "set": "xln",
+      "cn": "79",
+      "quantity": 1,
+      "price": 0.66,
+      "image_url": "https://cards.scryfall.io/normal/front/7/2/72f7375c-2d9b-4738-b539-00e1949980e7.jpg",
+      "type_line": "Creature \u2014 Siren Pirate Wizard"
+    },
+    {
+      "name": "Even the Score",
+      "set": "psnc",
+      "cn": "42p",
+      "quantity": 1,
+      "price": 0.69,
+      "image_url": "https://cards.scryfall.io/normal/front/c/d/cd115bf0-1cb8-44dc-993a-34583eb102f0.jpg",
+      "type_line": "Instant"
+    },
+    {
+      "name": "Ingenious Artillerist",
+      "set": "clb",
+      "cn": "182",
+      "quantity": 1,
+      "price": 0.78,
+      "image_url": "https://cards.scryfall.io/normal/front/1/d/1d8dd6c3-3699-4dd1-a019-fdb569eaf722.jpg",
+      "type_line": "Creature \u2014 Human Artificer"
+    },
+    {
+      "name": "Decanter of Endless Water",
+      "set": "plst",
+      "cn": "CLB-309",
+      "quantity": 1,
+      "price": 2.76,
+      "image_url": "https://cards.scryfall.io/normal/front/e/8/e8be8435-8fb4-47d2-8e7c-0350f354ddbd.jpg",
+      "type_line": "Artifact"
+    },
+    {
+      "name": "Silver Scrutiny",
+      "set": "pdmu",
+      "cn": "65p",
+      "quantity": 1,
+      "price": 0.31,
+      "image_url": "https://cards.scryfall.io/normal/front/6/f/6f7cf37b-5920-465a-ac83-12aa4cf82dec.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Mechanized Warfare",
+      "set": "pbro",
+      "cn": "139p",
+      "quantity": 1,
+      "price": 0.54,
+      "image_url": "https://cards.scryfall.io/normal/front/5/7/572923e3-da60-4407-9a6e-d281d7be3d0d.jpg",
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Vnwxt, Verbose Host",
+      "set": "pdft",
+      "cn": "73p",
+      "quantity": 1,
+      "price": 0.25,
+      "image_url": "https://cards.scryfall.io/normal/front/b/b/bb74c860-ab21-4979-a38d-746e54e9aa9d.jpg",
+      "type_line": "Legendary Creature \u2014 Homunculus"
+    },
+    {
+      "name": "Goldlust Triad",
+      "set": "tdc",
+      "cn": "34",
+      "quantity": 1,
+      "price": 5.84,
+      "image_url": "https://cards.scryfall.io/normal/front/2/8/2876d57a-a17e-4892-9992-321a32562e13.jpg",
+      "type_line": "Creature \u2014 Dragon"
+    },
+    {
+      "name": "Weftstalker Ardent",
+      "set": "eoe",
+      "cn": "169",
+      "quantity": 1,
+      "price": 1.08,
+      "image_url": "https://cards.scryfall.io/normal/front/c/d/cddb48cc-8eb1-47ce-90f0-7aad1e93e2c4.jpg",
+      "type_line": "Creature \u2014 Drix Artificer"
+    },
+    {
+      "name": "Glamer Gifter",
+      "set": "ecl",
+      "cn": "49",
+      "quantity": 1,
+      "price": 0.15,
+      "image_url": "https://cards.scryfall.io/normal/front/b/d/bd764dd4-2395-4138-ac29-260eac1aeaae.jpg",
+      "type_line": "Creature \u2014 Faerie Wizard"
+    },
+    {
+      "name": "Mathemagics",
+      "set": "psos",
+      "cn": "58p",
+      "quantity": 1,
+      "price": 2.28,
+      "image_url": "https://cards.scryfall.io/normal/front/f/b/fb82fa95-e2a7-412b-8dbe-051223160233.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Here Comes a New Hero!",
+      "set": "tmc",
+      "cn": "11",
+      "quantity": 1,
+      "price": 0.27,
+      "image_url": "https://cards.scryfall.io/normal/front/0/9/096a07e2-c213-4f8a-852f-813435bf1655.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Dirgur Focusmage // Braingeyser",
+      "set": "soc",
+      "cn": "18",
+      "quantity": 1,
+      "price": 0.44,
+      "image_url": "https://cards.scryfall.io/normal/front/7/b/7bdabeba-0cfb-4953-b725-50a48164a044.jpg",
+      "type_line": "Creature \u2014 Djinn Monk // Sorcery"
+    },
+    {
+      "name": "West Coast Expansion",
+      "set": "msc",
+      "cn": "40",
+      "quantity": 1,
+      "price": 0.21,
+      "image_url": "https://cards.scryfall.io/normal/front/4/1/41533f78-4a4e-424a-9612-a8bdb2a14b4b.jpg",
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Unruly Catapult",
+      "set": "woe",
+      "cn": "156",
+      "quantity": 1,
+      "price": 0.14,
+      "image_url": "https://cards.scryfall.io/normal/front/3/d/3dc275f8-f060-4c15-9b8f-63cf3857eaa7.jpg",
+      "type_line": "Artifact Creature \u2014 Construct"
+    },
+    {
+      "name": "Sunshot Militia",
+      "set": "lci",
+      "cn": "168",
+      "quantity": 1,
+      "price": 0.13,
+      "image_url": "https://cards.scryfall.io/normal/front/d/3/d3114f5c-21e9-43c3-abe3-3cf1da20916f.jpg",
+      "type_line": "Creature \u2014 Human Soldier"
+    },
+    {
+      "name": "Shao Jun",
+      "set": "acr",
+      "cn": "63",
+      "quantity": 1,
+      "price": 0.16,
+      "image_url": "https://cards.scryfall.io/normal/front/0/8/085568e5-d622-45ff-9a31-52eaa513ff31.jpg",
+      "type_line": "Legendary Creature \u2014 Human Assassin"
+    },
+    {
+      "name": "Malcolm, Keen-Eyed Navigator",
+      "set": "spg",
+      "cn": "2",
+      "quantity": 1,
+      "price": 5.05,
+      "image_url": "https://cards.scryfall.io/normal/front/c/f/cfcb3051-161f-42f8-bfec-db03b349ff00.jpg",
+      "type_line": "Legendary Creature \u2014 Siren Pirate"
+    },
+    {
+      "name": "Kediss, Emberclaw Familiar",
+      "set": "cmr",
+      "cn": "188",
+      "quantity": 1,
+      "price": 5.73,
+      "image_url": "https://cards.scryfall.io/normal/front/f/6/f606ebf1-483d-4331-b16a-9fb6f591a39f.jpg",
+      "type_line": "Legendary Creature \u2014 Elemental Lizard"
+    }
+  ],
+  "total_cards": 101,
+  "author": "LagZip",
+  "value": 91.28
+}

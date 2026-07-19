@@ -1,0 +1,280 @@
+QMainWindow, QWidget {
+    background-color: #1a1a1a;
+    color: #e8e8e8;
+    font-size: 13px;
+}
+
+/* Sidebar container + all its children share this background */
+QWidget#sidebar,
+QWidget#sidebarHeader {
+    background-color: #222222;
+}
+
+QLabel#sidebarAvatar {
+    background-color: transparent;
+    border: none;
+    border-radius: 32px;
+}
+
+QLabel#sidebarUsername {
+    color: #e8e8e8;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+QListWidget#sidebarList {
+    background-color: #222222;
+    color: #e8e8e8;
+    border: none;
+    outline: 0;
+}
+QListWidget#sidebarList::item {
+    padding: 12px 16px;
+    border-left: 3px solid transparent;
+}
+QListWidget#sidebarList::item:selected {
+    background-color: #2d2d2d;
+    color: #e8a838;
+    border-left: 3px solid #e8a838;
+}
+QListWidget#sidebarList::item:hover {
+    background-color: #2d2d2d;
+}
+
+QPushButton {
+    background-color: #e8a838;
+    color: #1a1a1a;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #f5c46a;
+}
+QPushButton:pressed {
+    background-color: #c48d28;
+}
+
+QFrame#statsFrame {
+    background-color: #222222;
+    border: 1px solid #2d2d2d;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+QLabel {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+QLabel#homeTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e8a838;
+}
+
+QLabel#placeholderLabel {
+    font-size: 18px;
+    color: #888888;
+}
+
+QLabel#screenTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e8a838;
+    background-color: transparent;
+}
+
+QScrollArea#decksScroll {
+    background-color: transparent;
+    border: none;
+}
+
+QLabel#imageTilePicture {
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 14px;
+}
+QLabel#imageTilePicture:hover {
+    border: 2px solid #e8a838;
+}
+
+QLabel#imageTileCaption {
+    color: #e8e8e8;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0 4px;
+}
+
+QLabel#deckDetailValue {
+    font-size: 18px;
+    color: #e8a838;
+    background-color: transparent;
+}
+
+QLabel#deckSectionHeader {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e8e8e8;
+    background-color: transparent;
+    padding-top: 8px;
+    border-bottom: 1px solid #2d2d2d;
+    padding-bottom: 6px;
+}
+
+QLabel#activeLabel {
+    color: #e8e8e8;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+QLabel#filterLabel {
+    color: #e8e8e8;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+QPushButton#backButton {
+    background-color: transparent;
+    color: #e8a838;
+    border: 1px solid #2d2d2d;
+    padding: 6px 12px;
+}
+QPushButton#backButton:hover {
+    background-color: #2d2d2d;
+    border: 1px solid #e8a838;
+}
+
+QWidget#cardModal {
+    background-color: rgba(0, 0, 0, 180);
+}
+
+QWidget#cardModalContent {
+    background-color: #222222;
+    border-radius: 12px;
+    border: 1px solid #2d2d2d;
+}
+
+QLabel#cardModalName {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e8e8e8;
+    background-color: transparent;
+}
+
+QLabel#cardModalMeta {
+    font-size: 13px;
+    color: #aaaaaa;
+    background-color: transparent;
+}
+
+QLabel#collectionStats {
+    color: #e8e8e8;
+    font-size: 13px;
+    background-color: transparent;
+}
+
+QLineEdit#searchInput {
+    background-color: #2a2a2a;
+    color: #e8e8e8;
+    border: 1px solid #2d2d2d;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+QLineEdit#searchInput:focus {
+    border: 1px solid #e8a838;
+}
+
+QLabel#resultCount {
+    color: #888888;
+    font-size: 12px;
+    background-color: transparent;
+    padding-right: 12px;
+}
+
+QToolButton {
+    background-color: #2a2a2a;
+    color: #e8e8e8;
+    border: 1px solid #2d2d2d;
+    border-radius: 4px;
+    padding: 4px 14px;
+    font-weight: bold;
+    /* pt, not px — the stylesheet cascade always wins over a Python-set
+       QFont once any QSS touches a widget (setFont() alone doesn't stick),
+       and a px-only font leaves QFont.pointSize() at -1, which broke
+       tooltip rendering ("QFont::setPointSize: Point size <= 0"). */
+    font-size: 22pt;
+}
+QToolButton:hover {
+    border: 1px solid #e8a838;
+}
+QToolButton:checked {
+    background-color: #e8a838;
+    color: #1a1a1a;
+    border: 1px solid #e8a838;
+}
+QToolButton::menu-indicator {
+    image: none;
+}
+
+QMenu {
+    background-color: #222222;
+    color: #e8e8e8;
+    border: 1px solid #2d2d2d;
+    padding: 4px;
+}
+QMenu::item {
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+QMenu::item:selected {
+    background-color: #2d2d2d;
+}
+
+QCheckBox {
+    color: #e8e8e8;
+    background-color: transparent;
+    padding: 4px 8px;
+}
+QCheckBox::indicator {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #2d2d2d;
+    border-radius: 3px;
+    background-color: #2a2a2a;
+}
+QCheckBox::indicator:checked {
+    background-color: #e8a838;
+    border: 1px solid #e8a838;
+}
+
+QFrame#settingsSection {
+    background-color: #222222;
+    border: 1px solid #2d2d2d;
+    border-radius: 6px;
+}
+
+QLabel#settingsSectionTitle {
+    color: #e8a838;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+QLabel#settingsDescription {
+    color: #888888;
+    font-size: 12px;
+    background-color: transparent;
+    padding-bottom: 4px;
+}
+
+QLabel#settingsLabel {
+    color: #e8e8e8;
+    font-size: 13px;
+    background-color: transparent;
+}
