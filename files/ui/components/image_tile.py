@@ -6,7 +6,7 @@ pixmap helpers directly rather than ImageTile itself, for performance.
 """
 
 from PySide6.QtCore import Qt, Signal, QRectF
-from PySide6.QtGui import QPixmap, QPainter, QPainterPath, QColor, QImage
+from PySide6.QtGui import QPixmap, QPainter, QPainterPath, QColor, QImage, QLinearGradient
 from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel
 
 from ui.image_loader import ImageLoader
@@ -47,17 +47,25 @@ def make_placeholder(width: int, height: int, radius: int) -> QPixmap:
     return pixmap
 
 
-def paint_tint_overlay(painter: QPainter, rect: QRectF, radius: float, color: QColor):
+def paint_tint_overlay(painter: QPainter, rect: QRectF, radius: float, color: QColor, color2: QColor | None = None):
     """Draws a translucent rounded-rect wash over `rect` onto an
     already-open `painter` — the status-color overlay in the availability
     grid and the foil overlay in the collection grid both use this.
     `color`'s alpha controls how strong the wash is. `radius` should match
     the underlying image's own corner radius so the tint doesn't spill
-    past its rounded corners."""
+    past its rounded corners. If `color2` is given, paints a diagonal
+    (top-left to bottom-right) gradient from `color` to `color2` instead
+    of a flat wash."""
     painter.save()
     painter.setRenderHint(QPainter.Antialiasing)
     painter.setPen(Qt.NoPen)
-    painter.setBrush(color)
+    if color2 is not None:
+        gradient = QLinearGradient(rect.topLeft(), rect.bottomRight())
+        gradient.setColorAt(0, color)
+        gradient.setColorAt(1, color2)
+        painter.setBrush(gradient)
+    else:
+        painter.setBrush(color)
     painter.drawRoundedRect(rect, radius, radius)
     painter.restore()
 

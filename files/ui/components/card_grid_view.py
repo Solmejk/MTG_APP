@@ -18,6 +18,7 @@ from PySide6.QtWidgets import (
 import scryfall
 from ui.image_loader import ImageLoader
 from ui.components.image_tile import make_placeholder, paint_tint_overlay
+from ui.components.card_section import quantity_caption
 
 
 CELL_WIDTH = 140
@@ -26,8 +27,9 @@ IMAGE_HEIGHT = 196
 IMAGE_RADIUS = 12
 CAPTION_HEIGHT = 36
 
-FOIL_COLOR = QColor("#9b59b6")
-FOIL_ALPHA = 30  # very slight — high transparency
+FOIL_COLOR = QColor("#9b59b6")  # purple, gradient start
+FOIL_COLOR2 = QColor("#f1c40f")  # yellow, gradient end
+FOIL_ALPHA = 50  # Foil transparency
 
 
 class CollectionModel(QAbstractListModel):
@@ -122,12 +124,14 @@ class CardThumbnailDelegate(QStyledItemDelegate):
         x = img_x + (CELL_WIDTH - pixmap.width()) // 2
         painter.drawPixmap(x, img_y, pixmap)
 
-        # Foil tint — a very slight translucent wash, rounded to match the image
+        # Foil tint — a very slight translucent purple-to-yellow fade, rounded to match the image
         if entry.get("isFoil"):
             color = QColor(FOIL_COLOR)
             color.setAlpha(FOIL_ALPHA)
+            color2 = QColor(FOIL_COLOR2)
+            color2.setAlpha(FOIL_ALPHA)
             paint_tint_overlay(
-                painter, QRectF(x, img_y, pixmap.width(), pixmap.height()), IMAGE_RADIUS, color,
+                painter, QRectF(x, img_y, pixmap.width(), pixmap.height()), IMAGE_RADIUS, color, color2,
             )
 
         # Hover border around image
@@ -152,9 +156,9 @@ class CardThumbnailDelegate(QStyledItemDelegate):
         font.setPointSize(9)
         painter.setFont(font)
         
-        name = entry["card"]["name"]
+        caption = quantity_caption({"quantity": entry["quantity"], "name": entry["card"]["name"]})
         metrics = QFontMetrics(font)
-        elided = metrics.elidedText(name, Qt.ElideRight, CELL_WIDTH)
+        elided = metrics.elidedText(caption, Qt.ElideRight, CELL_WIDTH)
         caption_rect = QRect(img_x, caption_y, CELL_WIDTH, CAPTION_HEIGHT)
         painter.drawText(caption_rect, Qt.AlignTop | Qt.AlignHCenter, elided)
         painter.restore()

@@ -8,6 +8,7 @@ from PySide6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit,
 )
 
+import availability
 from app import MTGApp
 from ui.components.card_grid_view import CardGridView
 from ui.components.color_pie import ColorPie, ColorLegend
@@ -94,11 +95,18 @@ class CollectionScreen(QWidget):
         self._grid = CardGridView()
         self._grid.setContentsMargins(40, 0, 40, 40)
         self._grid.setCardData(self.app.collection.cards)
-        self._grid.card_clicked.connect(self.card_clicked.emit)
+        self._grid.card_clicked.connect(self._on_card_clicked)
         outer.addWidget(self._grid, 1)
 
         self._render_stats()
         self._update_count()
+
+    def _on_card_clicked(self, card: dict):
+        """Slot for the grid's card_clicked: adds the "used in decks"
+        breakdown (same lookup the availability screen uses) before
+        re-emitting for CardModal to display."""
+        used_in = availability.used_in_decks(self.app.decks, card["name"])
+        self.card_clicked.emit({**card, "used_in_decks": used_in})
 
     def _on_search_changed(self, query: str):
         """Slot for the search box: applies the filter to the grid and
