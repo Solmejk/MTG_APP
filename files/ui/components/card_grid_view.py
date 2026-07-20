@@ -18,7 +18,6 @@ from PySide6.QtWidgets import (
 import scryfall
 from ui.image_loader import ImageLoader
 from ui.components.image_tile import make_placeholder, paint_tint_overlay
-from ui.components.card_section import quantity_caption
 
 
 CELL_WIDTH = 140
@@ -156,11 +155,31 @@ class CardThumbnailDelegate(QStyledItemDelegate):
         font.setPointSize(9)
         painter.setFont(font)
         
-        caption = quantity_caption({"quantity": entry["quantity"], "name": entry["card"]["name"]})
+        quantity = entry["quantity"]
+        qty_prefix = f"{quantity}x " if quantity > 1 else ""
+        foil_prefix = "F  " if entry.get("isFoil") else ""
+        caption = f"{qty_prefix}{foil_prefix}{entry['card']['name']}"
         metrics = QFontMetrics(font)
         elided = metrics.elidedText(caption, Qt.ElideRight, CELL_WIDTH)
         caption_rect = QRect(img_x, caption_y, CELL_WIDTH, CAPTION_HEIGHT)
-        painter.drawText(caption_rect, Qt.AlignTop | Qt.AlignHCenter, elided)
+
+        if foil_prefix and elided.startswith(qty_prefix + foil_prefix):
+            rest = elided[len(qty_prefix) + len(foil_prefix):]
+            qty_width = metrics.horizontalAdvance(qty_prefix)
+            foil_width = metrics.horizontalAdvance(foil_prefix)
+            rest_width = metrics.horizontalAdvance(rest)
+            x_cursor = img_x + (CELL_WIDTH - qty_width - foil_width - rest_width) // 2
+
+            if qty_prefix:
+                painter.drawText(QRect(x_cursor, caption_y, qty_width, CAPTION_HEIGHT), Qt.AlignTop | Qt.AlignLeft, qty_prefix)
+                x_cursor += qty_width
+            painter.setPen(QColor("#ffd700"))
+            painter.drawText(QRect(x_cursor, caption_y, foil_width, CAPTION_HEIGHT), Qt.AlignTop | Qt.AlignLeft, foil_prefix)
+            x_cursor += foil_width
+            painter.setPen(QColor("#e8e8e8"))
+            painter.drawText(QRect(x_cursor, caption_y, rest_width, CAPTION_HEIGHT), Qt.AlignTop | Qt.AlignLeft, rest)
+        else:
+            painter.drawText(caption_rect, Qt.AlignTop | Qt.AlignHCenter, elided)
         painter.restore()
         
         # Trigger an image load if we haven't yet
